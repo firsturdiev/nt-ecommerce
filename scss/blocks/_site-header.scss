@@ -47,10 +47,17 @@
   text-transform: capitalize;
 }
 
+/* SITE-HEADER__INNER */
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  padding: 40px 45px;
+}
+
 /* MEDIA */
 
 @media screen and (max-width: $breakpoint-medium) {
 .site-header{
   display: none;
-}
 }
