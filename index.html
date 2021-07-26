@@ -13,14 +13,51 @@
   
     <header class="site-header">
       <div class="container">
-        <div class="site-header__inner"></div>
+        <div class="site-header__inner">
+          <a class="logo" href="./" aria-label="Home">
+            <img src="./img/logo.svg" width="177" height="50" alt="Freshnesecom logo">
+          </a>
+
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <select class="search-form__categories">
+              <option value="" selected disabled>All categories</option>
+              <option value="test">test</option>
+              <option value="test">test</option>
+              <option value="test">test</option>
+              <option value="test">test</option>
+              <option value="test">test</option>
+            </select>
+
+            <input class="search-form__input" type="search" placeholder="Search Products, categories ..." name="search" aria-label="Search">
+
+            <button class="search-form__submit" type="submit" aria-label="Search button"></button>
+          </form>
+
+          <div class="site-header__actions">
+            <ul class="site-header__actions-list">
+              <li class="site-header__actions-item">
+                <a class="site-header__actions-btn" href="#" aria-label="Profile">
+                  <img src="./img/icon-user.svg" width="24" height="24" alt="" aria-hidden="true">
+                </a>
+              </li>
+
+              <li class="site-header__actions-item">
+                <a class="site-header__actions-btn" href="#" aria-label="Shopping cart">
+                  <img src="./img/icon-basket.svg" width="24" height="24" alt="" aria-hidden="true">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-  
+  `
   
     <!-- SITE-CONTENT -->
   
-    <main class="site-content"></main>
+    <main class="site-content">
+      <div class="container"></div>
+    </main>
   
   
     <!-- SITE-FOOTER -->
