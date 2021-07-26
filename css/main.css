@@ -234,4 +234,69 @@ img {
   max-width: 1260px;
   margin: 0 auto;
 }
+
+/* SITE-HEADER__TOP */
+.site-header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 45px;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.05);
+}
+
+.site-header__top-item {
+  text-decoration: none;
+  color: #151515;
+}
+
+.site-header__top-item:hover {
+  text-decoration: underline;
+}
+
+.site-header__top-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.site-header__top-item--green {
+  color: #6a983c;
+}
+
+.sitenav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 38px;
+}
+
+.sitenav__item:hover {
+  text-decoration: underline;
+}
+
+.sitenav__link {
+  text-decoration: none;
+  color: #6a983c;
+  text-transform: capitalize;
+}
+
+/* MEDIA */
+@media screen and (max-width: 768px) {
+  .site-header {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
