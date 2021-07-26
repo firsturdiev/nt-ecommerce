@@ -1,0 +1,23 @@
+/* SITENAV */
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  @include list-reset;
+}
+
+.sitenav__item {
+  &:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.sitenav__link {
+  text-decoration: none;
+  color: $color-green;
+  text-transform: capitalize;
+}
