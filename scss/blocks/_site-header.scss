@@ -67,6 +67,9 @@
   left: -6px;
   bottom: -7px;
   height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 4px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -93,6 +96,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .site-header__inner {
+    padding-inline: 20px;
+  }
+
   .site-header__actions-item {
     &:not(:last-child) {
       margin-right: 20px;

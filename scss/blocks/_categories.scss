@@ -66,3 +66,11 @@
 .categories__item:hover .categories__dropdown {
   display: block;
 }
+
+// MEDIA
+
+@media screen and (max-width: 500px) {
+  .categories {
+    padding-inline: 20px;
+  }
+}

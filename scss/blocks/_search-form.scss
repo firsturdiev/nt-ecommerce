@@ -78,3 +78,18 @@
     border-left: none;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .search-form {
+    padding-block: 13px;
+  }
+
+  .search-form__input {
+    width: auto;
+  }
+  
+  .search-form__submit {
+    width: 20px;
+    height: 20px;
+  }
+}
