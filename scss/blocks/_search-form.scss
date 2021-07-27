@@ -53,3 +53,28 @@
 
   @include bg-full;
 }
+
+// MEDIA
+
+@media screen and (max-width: 900px) {
+  .search-form {
+    width: 100%;
+    order: 3;
+    margin-top: 30px;
+  }
+
+  .search-form__input {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .search-form__categories {
+    display: none;
+  }
+
+  .search-form__input {
+    padding-left: initial;
+    border-left: none;
+  }
+}

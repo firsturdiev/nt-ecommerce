@@ -1,7 +1,13 @@
 .logo {
-  margin-right: 158px;
+  margin-right: auto;
 }
 
 .logo img {
   display: block;
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    width: 120px;
+  }
 }
