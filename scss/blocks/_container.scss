@@ -2,6 +2,7 @@
   max-width: $container-size;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
