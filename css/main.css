@@ -707,9 +707,19 @@ img {
   margin-bottom: 48px;
 }
 
+.site-footer__copyright {
+  margin: 0;
+}
+
 @media screen and (max-width: 510px) {
   .site-footer__bottom {
     display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .site-footer__copyright {
+    text-align: center;
   }
 }
 
