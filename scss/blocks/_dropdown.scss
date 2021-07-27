@@ -1,9 +1,9 @@
 .dropdown__link {
   padding: 5px;
   width: 100%;
+  min-width: 100px;
   display: block;
   text-decoration: none;
-  text-align: center;
   text-transform: capitalize;
   color: inherit;
   transition: color 0.3s ease, background-color 0.3s ease;

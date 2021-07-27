@@ -522,6 +522,8 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 15px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -531,12 +533,7 @@ img {
   position: relative;
 }
 
-.categories__item:not(:last-child) {
-  margin-right: 40px;
-}
-
 .categories__link {
-  min-width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,8 +571,13 @@ img {
   position: absolute;
   z-index: 99;
   top: 100%;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 100%;
   background-color: #fff;
   margin: 0;
   padding: 0;
@@ -589,9 +591,9 @@ img {
 .dropdown__link {
   padding: 5px;
   width: 100%;
+  min-width: 100px;
   display: block;
   text-decoration: none;
-  text-align: center;
   text-transform: capitalize;
   color: inherit;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease;

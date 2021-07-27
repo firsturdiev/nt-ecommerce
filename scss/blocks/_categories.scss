@@ -10,20 +10,16 @@
   align-items: center;
   flex-wrap: wrap;
   row-gap: 15px;
+  column-gap: 40px;
 
   @include list-reset;
 }
 
 .categories__item {
   position: relative;
-
-  &:not(:last-child) {
-    margin-right: 40px;
-  }
 }
 
 .categories__link {
-  min-width: 100px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -58,8 +54,10 @@
   position: absolute;
   z-index: 99;
   top: 100%;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  min-width: 100%;
   background-color: #fff;
 
   @include list-reset;
