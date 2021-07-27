@@ -492,6 +492,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   color: #151515;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .site-header__actions-btn:hover {
@@ -626,7 +628,9 @@ img {
   width: -moz-max-content;
   width: max-content;
   min-width: 100%;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -655,8 +659,7 @@ img {
 }
 
 .dropdown__link:hover {
-  background-color: #6a983c;
-  color: #fff;
+  background-color: #ebebeb;
 }
 
 .dropdown__link:active {

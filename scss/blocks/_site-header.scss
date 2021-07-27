@@ -52,6 +52,7 @@
 .site-header__actions-btn {
   display: flex;
   color: $color-black;
+  transition: color 0.3s ease;
 
   &:hover {
     color: $color-green
