@@ -1,0 +1,24 @@
+.tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @include list-reset;
+}
+
+.tags__tag {
+  display: block;
+  padding: 4px 10px;
+  text-decoration: none;
+  background-color: $color-black-light;
+  border-radius: 12px;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: #d1d1d1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
