@@ -521,6 +521,7 @@ img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 15px;
   margin: 0;
   padding: 0;
   list-style: none;
