@@ -51,6 +51,11 @@
 
 .site-header__actions-btn {
   display: flex;
+  color: $color-black;
+
+  &:hover {
+    color: $color-green
+  }
 }
 
 .site-header__actions-btn img {
@@ -84,5 +89,17 @@
 @media screen and (max-width: 900px) {
   .site-header__inner {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .site-header__actions-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  .site-header__actions-btn svg {
+    width: 20px;
   }
 }

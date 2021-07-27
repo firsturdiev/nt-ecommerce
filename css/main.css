@@ -469,6 +469,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #151515;
+}
+
+.site-header__actions-btn:hover {
+  color: #6a983c;
 }
 
 .site-header__actions-btn img {
@@ -503,6 +508,15 @@ img {
   .site-header__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .site-header__actions-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .site-header__actions-btn svg {
+    width: 20px;
   }
 }
 
