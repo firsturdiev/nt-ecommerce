@@ -1,0 +1,19 @@
+.dropdown__link {
+  padding: 5px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  color: inherit;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-green;
+    color: #fff;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

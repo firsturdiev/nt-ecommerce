@@ -1,0 +1,43 @@
+.heading {
+  margin: 0;
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
+  font-weight: 600;
+  color: #151515;
+}
+
+// S1
+.heading--primary {
+  font-size: 32px;
+  line-height: 45px;
+}
+
+// S2
+.heading--secondary {
+  font-size: 26px;
+  line-height: 39px;
+}
+
+// S3
+.heading--tertiary {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+// S4
+.heading--quaternary {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+// S5
+.heading--quinary {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+// S6
+.heading--senary {
+  font-size: 12px;
+  line-height: 18px;
+}
