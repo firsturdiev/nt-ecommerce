@@ -1,0 +1,44 @@
+/* RECOMMENDATIONS */
+
+.recommendations {
+  padding: 64px 45px;
+}
+
+.recommendations__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.recommendations__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @include list-reset;
+}
+
+.recommendations__item {
+  flex-grow: 1;
+}
+
+// MEDIA
+
+@media screen and (max-width: 1154px) {
+  .recommendations__item {
+    flex-grow: initial;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .recommendations__item {
+    flex-grow: 1;
+  }
+}
+
+@media screen and  (max-width: $breakpoint-small) {
+  .recommendations {
+    padding-inline: 20px;
+  }
+}

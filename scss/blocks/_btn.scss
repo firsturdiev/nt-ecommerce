@@ -51,6 +51,17 @@
   }
 }
 
+.btn--white {
+  color: $color-black;
+  background-color: #fff;
+
+  --btn-arrow: url("../../img/icon-arrow-right-green.svg");
+
+  &:hover {
+    background-color: $color-black-light;
+  }
+}
+
 .btn--stroke {
   color: $color-black;
   background-color: transparent;
