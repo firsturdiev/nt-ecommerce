@@ -432,6 +432,8 @@ img {
 }
 
 .products__cover-img {
+  width: 100%;
+  height: 180px;
   display: block;
   border-radius: 12px;
   -o-object-fit: cover;
@@ -478,13 +480,6 @@ img {
 .product__price-sale {
   text-decoration: line-through;
   color: #a9a9a9;
-}
-
-@media screen and (max-width: 661px) {
-  .products__cover-img {
-    width: 100%;
-    height: 180px;
-  }
 }
 
 /* SEARCH-FORM */
