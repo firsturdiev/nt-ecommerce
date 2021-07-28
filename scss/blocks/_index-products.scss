@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 661px) {
-  .index-products__list {
-    justify-content: center;
+  .index-products__item {
+    flex-grow: 1;
   }
 }
