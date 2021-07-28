@@ -1,0 +1,39 @@
+/* INDEX-PRODUCTS */
+
+.index-products__list {
+  display: flex;
+  align-items: flex-start;
+
+  @include list-reset;
+}
+
+.index-products__item {
+  flex-grow: 1;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+// MEDIA 
+
+@media screen and (max-width: 950px) {
+  .index-products__list {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .index-products__item {
+    flex-grow: initial;
+
+    &:not(:last-child) {
+      margin-right: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .index-products__list {
+    justify-content: center;
+  }
+}

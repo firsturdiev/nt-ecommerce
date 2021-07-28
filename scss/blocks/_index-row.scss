@@ -11,11 +11,27 @@
   margin-right: 32px;
 }
 
+.index-row__heading {
+  margin-bottom: 16px;
+}
+
 .index-row__content {
   flex-grow: 1;
 }
 
 // MEDIA
+
+@media screen and (max-width: 1100px) {
+  .index-products.index-row {
+    flex-wrap: wrap;
+  }
+
+  .index-products .index-row__aside {
+    flex-grow: 1;
+    margin-right: initial;
+    margin-bottom: 50px;
+  }
+}
 
 @media screen and (max-width: 660px) {
   .index-row {
@@ -23,7 +39,7 @@
   }
 
   .index-row__aside {
-    width: 100%;
+    flex-grow: 1;
     margin-right: initial;
     margin-bottom: 50px;
   }

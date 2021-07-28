@@ -9,6 +9,11 @@
   line-height: 22px;
   text-decoration: none;
   border-radius: 12px;
+  transition: background-color 0.3s ease;
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 // DISABLED
@@ -39,7 +44,11 @@
   color: $color-black;
   background-color: $color-black-light;
 
-  --btn-arrow: url('../../img/icon-arrow-right-black.svg');
+  --btn-arrow: url("../../img/icon-arrow-right-black.svg");
+
+  &:hover {
+    background-color: #d1d1d1;
+  }
 }
 
 .btn--stroke {
@@ -47,7 +56,26 @@
   background-color: transparent;
   border: 2px solid $color-green-light;
 
-  --btn-arrow: url('../../img/icon-arrow-right-green.svg');
+  --btn-arrow: url("../../img/icon-arrow-right-green.svg");
+
+  &:hover {
+    color: #fff;
+    background-color: $color-green-light;
+
+    --btn-arrow: url("../../img/icon-arrow-right-white.svg");
+  }
+}
+
+.btn--green {
+  color: #fff;
+  background-color: $color-green;
+  border: 2px solid $color-green-dark;
+
+  --btn-arrow: url("../../img/icon-arrow-right-white.svg");
+
+  &:hover {
+    background-color: $color-green-dark;
+  }
 }
 
 // ARROW
@@ -66,7 +94,7 @@
   &-right::after {
     margin-left: 6px;
   }
-  
+
   &-left::before {
     margin-right: 6px;
   }

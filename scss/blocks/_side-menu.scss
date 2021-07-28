@@ -28,6 +28,20 @@
 
 // MEDIA
 
+@media screen and (max-width: 1100px) {
+  .index-products .side-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    margin-bottom: 30px;
+    row-gap: 10px;
+  }
+
+  .index-products .side-menu__item {
+    margin-bottom: initial;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .side-menu__list {
     display: flex;
