@@ -1,0 +1,41 @@
+/* INDEX-BANNER */
+
+.index-banner__heading {
+  margin-bottom: 16px;
+}
+
+.index-banner__promos-list {
+  display: flex;
+
+  @include list-reset;
+}
+
+.index-banner__promos-item {
+  flex-grow: 1;
+  
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 970px) {
+  .index-banner__promos-list {
+    flex-wrap: wrap;
+  }
+
+  .index-banner__promos-item {
+    width: 100%;
+    flex-grow: initial;
+
+    &:not(:last-child) {
+      margin-right: initial;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  
+}

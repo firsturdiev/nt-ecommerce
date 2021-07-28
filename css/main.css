@@ -809,7 +809,7 @@ img {
 .footer-nav__links-link {
   display: inline-block;
   text-decoration: none;
-  color: #6A983C;
+  color: #6a983c;
 }
 
 .footer-nav__links-link:hover {
@@ -890,5 +890,216 @@ img {
     margin-top: 16px;
     padding-bottom: 10px;
   }
+}
+
+/* INDEX-BANNER */
+.index-banner__heading {
+  margin-bottom: 16px;
+}
+
+.index-banner__promos-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-banner__promos-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.index-banner__promos-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+/* MEDIA */
+@media screen and (max-width: 970px) {
+  .index-banner__promos-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .index-banner__promos-item {
+    width: 100%;
+    -webkit-box-flex: initial;
+        -ms-flex-positive: initial;
+            flex-grow: initial;
+  }
+  .index-banner__promos-item:not(:last-child) {
+    margin-right: initial;
+    margin-bottom: 32px;
+  }
+}
+
+/* INDEX-ROW */
+.index-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 64px 45px;
+}
+
+.index-row__aside {
+  width: 270px;
+  margin-right: 32px;
+}
+
+.index-row__content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (max-width: 660px) {
+  .index-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .index-row__aside {
+    width: 100%;
+    margin-right: initial;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .index-row {
+    padding-inline: 20px;
+  }
+}
+
+/* SIDE-MENU */
+.side-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.side-menu__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.side-menu__link {
+  color: #6a983c;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.side-menu__link:hover {
+  color: #151515;
+  text-decoration: none;
+}
+
+.side-menu__link:active {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 660px) {
+  .side-menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+    margin-bottom: 30px;
+    row-gap: 10px;
+  }
+  .side-menu__list .side-menu__item {
+    margin-bottom: initial;
+  }
+}
+
+/* BTN */
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.btn--disabled,
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn--small {
+  padding: 6px 12px;
+}
+
+.btn--medium {
+  padding: 12.5px 16px;
+}
+
+.btn--large {
+  padding: 16.5px 48px;
+}
+
+.btn--grey {
+  color: #151515;
+  background-color: #f5f5f5;
+  --btn-arrow: url('../../img/icon-arrow-right-black.svg');
+}
+
+.btn--stroke {
+  color: #151515;
+  background-color: transparent;
+  border: 2px solid #92c064;
+  --btn-arrow: url('../../img/icon-arrow-right-green.svg');
+}
+
+.btn--arrow-right::after, .btn--arrow-left::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: var(--btn-arrow);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.btn--arrow-right::after {
+  margin-left: 6px;
+}
+
+.btn--arrow-left::before {
+  margin-right: 6px;
+}
+
+/* PROMO */
+.promo {
+  padding: 48px 32px;
+  background-image: url("../../img/bg-promo.png");
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__subtitle {
+  color: #6a983c;
+  margin-bottom: 8px;
+}
+
+.promo__heading {
+  margin-bottom: 94px;
 }
 /*# sourceMappingURL=main.css.map */

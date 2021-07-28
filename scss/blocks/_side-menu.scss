@@ -1,0 +1,43 @@
+/* SIDE-MENU */
+
+.side-menu__list {
+  @include list-reset;
+  margin-bottom: 48px;
+}
+
+.side-menu__item {
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.side-menu__link {
+  color: $color-green;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+// MEDIA
+
+@media screen and (max-width: 660px) {
+  .side-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    margin-bottom: 30px;
+    row-gap: 10px;
+  }
+
+  .side-menu__list .side-menu__item {
+    margin-bottom: initial;
+  }
+}

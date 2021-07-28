@@ -1,0 +1,19 @@
+/* PROMO */
+
+.promo {
+  padding: 48px 32px;
+  background-image: url("../../img/bg-promo.png");
+  border-radius: 12px;
+
+  @include bg-full;
+  background-size: cover;
+}
+
+.promo__subtitle {
+  color: $color-green;
+  margin-bottom: 8px;
+}
+
+.promo__heading {
+  margin-bottom: 94px;
+}

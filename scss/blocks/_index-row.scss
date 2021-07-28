@@ -1,0 +1,36 @@
+/* INDEX-ROW */
+
+.index-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 64px 45px;
+}
+
+.index-row__aside {
+  width: 270px;
+  margin-right: 32px;
+}
+
+.index-row__content {
+  flex-grow: 1;
+}
+
+// MEDIA
+
+@media screen and (max-width: 660px) {
+  .index-row {
+    flex-wrap: wrap;
+  }
+
+  .index-row__aside {
+    width: 100%;
+    margin-right: initial;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .index-row {
+    padding-inline: 20px;
+  }
+}

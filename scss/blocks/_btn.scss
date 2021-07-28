@@ -1,0 +1,73 @@
+/* BTN */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+// DISABLED
+
+.btn--disabled,
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+// SIZE
+
+.btn--small {
+  padding: 6px 12px;
+}
+
+.btn--medium {
+  padding: 12.5px 16px;
+}
+
+.btn--large {
+  padding: 16.5px 48px;
+}
+
+// STYLE
+
+.btn--grey {
+  color: $color-black;
+  background-color: $color-black-light;
+
+  --btn-arrow: url('../../img/icon-arrow-right-black.svg');
+}
+
+.btn--stroke {
+  color: $color-black;
+  background-color: transparent;
+  border: 2px solid $color-green-light;
+
+  --btn-arrow: url('../../img/icon-arrow-right-green.svg');
+}
+
+// ARROW
+
+.btn--arrow {
+  &-right::after,
+  &-left::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: var(--btn-arrow);
+
+    @include bg-full;
+  }
+
+  &-right::after {
+    margin-left: 6px;
+  }
+  
+  &-left::before {
+    margin-right: 6px;
+  }
+}
