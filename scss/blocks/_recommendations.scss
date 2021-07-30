@@ -20,20 +20,27 @@
 }
 
 .recommendations__item {
-  flex-grow: 1;
+  width: calc((100% - 96px) / 4);
 }
 
 // MEDIA
 
-@media screen and (max-width: 1154px) {
+@media screen and (max-width: 1050px) {
   .recommendations__item {
-    flex-grow: initial;
+    width: calc((100% - 64px) / 3);
   }
 }
 
 @media screen and (max-width: 880px) {
   .recommendations__item {
+    width: auto;
     flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .recommendations {
+    padding-bottom: 35px;
   }
 }
 

@@ -63,6 +63,10 @@
   max-width: none;
 }
 
+.site-header__actions-item--toggle {
+  display: none;
+}
+
 .site-header__actions-indicator {
   position: absolute;
   left: -6px;
@@ -90,9 +94,25 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .site-header__inner {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .site-header__actions-item--toggle {
+    display: block;
+  }
+
+  .site-header__actions-item--toggle .site-header__actions-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-green
+    }
   }
 }
 

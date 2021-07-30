@@ -33,6 +33,12 @@
   }
 }
 
+@media screen and (max-width: $breakpoint-medium) {
+  .index-row {
+    padding-block: 35px;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .index-row {
     flex-wrap: wrap;
