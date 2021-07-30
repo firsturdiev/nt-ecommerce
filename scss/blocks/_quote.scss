@@ -1,0 +1,26 @@
+/* QUOTE */
+
+.quote {
+  position: relative;
+  padding: 24px 32px 40px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+}
+
+.quote__text {
+  margin-bottom: 24px;
+}
+
+.quote__author {
+  color: #A9A9A9;
+}
+
+.quote__author-avatar {
+  position: absolute;
+  left: 50%;
+  bottom: -24px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}

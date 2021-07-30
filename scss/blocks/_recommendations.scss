@@ -4,18 +4,11 @@
   padding: 64px 45px;
 }
 
-.recommendations__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-
 .recommendations__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-
+  gap: 32px;       
+   
   @include list-reset;
 }
 

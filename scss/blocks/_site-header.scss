@@ -55,7 +55,7 @@
   transition: color 0.3s ease;
 
   &:hover {
-    color: $color-green
+    color: $color-green;
   }
 }
 
@@ -101,26 +101,26 @@
 }
 
 @media screen and (max-width: 560px) {
+  .site-header {
+    position: relative;
+    z-index: 1;
+  }
+
   .site-header__actions-item--toggle {
     display: block;
   }
 
   .site-header__actions-item--toggle .site-header__actions-btn {
     background: transparent;
-    border: none;
-    cursor: pointer;
+    border: none;  
 
-    &:hover {
-      color: $color-green
+    &:active {
+      opacity: 0.7;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
-  .site-header__inner {
-    padding-inline: 20px;
-  }
-
   .site-header__actions-item {
     &:not(:last-child) {
       margin-right: 20px;
@@ -129,5 +129,11 @@
 
   .site-header__actions-btn svg {
     width: 20px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .site-header__inner {
+    padding-inline: 20px;
   }
 }

@@ -1,0 +1,12 @@
+/* CAROUSEL */
+
+.carousel {
+  padding: 64px 45px;
+}
+
+.carousel__list {
+  display: flex;
+  gap: 32px;
+
+  @include list-reset;
+}

@@ -3,37 +3,27 @@
 .index-products__list {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
 
   @include list-reset;
 }
 
 .index-products__item {
-  flex-grow: 1;
-
-  &:not(:last-child) {
-    margin-right: 32px;
-  }
+  width: calc((100% - 64px) / 3);
 }
 
 // MEDIA 
 
-@media screen and (max-width: 950px) {
-  .index-products__list {
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-
+@media screen and (max-width: 850px) {
   .index-products__item {
-    flex-grow: initial;
-
-    &:not(:last-child) {
-      margin-right: initial;
-    }
+    width: calc((100% - 32px) / 2);
   }
 }
 
-@media screen and (max-width: 661px) {
+@media screen and (max-width: 600px) {
   .index-products__item {
+    width: auto;
     flex-grow: 1;
   }
 }
