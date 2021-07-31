@@ -7,7 +7,7 @@
 .index-blog__posts {
   display: flex;
   align-items: flex-start;
-  column-gap: 32px;
+  gap: 32px;
 }
 
 .index-blog__posts-list {
@@ -24,16 +24,44 @@
 }
 
 .index-blog__post--list .index-blog__post-wrapper {
-  margin-right: auto;
+  width: 225px;
+  margin-right: 48px;
 }
 
 .index-blog__post-poster {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.index-blog__post-poster img {
+  width: 100%;
+  height: 100%;
+  display: block;
   border-radius: 12px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.index-blog__post-link {
+  display: block;
+  text-decoration: none;
+}
+
+.index-blog__post--hover .index-blog__post-poster img {
+  transform: scale(1.05);
 }
 
 .index-blog__post-title {
   margin-bottom: 16px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .index-blog__post-info {
@@ -48,6 +76,23 @@
   margin-right: 16px;
 }
 
+.index-blog__post-tag {
+  margin-bottom: 8px;
+  padding: 0 8px;
+  background-color: #f4f8ec;
+}
+
+.index-blog__post-tag .tags__tag-title {
+  color: #6a983c;
+}
+
+.index-blog__post--banner .index-blog__post-tag {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  margin-bottom: initial;
+}
+
 .index-blog__post--card {
   width: 270px;
   flex-direction: column-reverse;
@@ -55,7 +100,7 @@
 }
 
 .index-blog__post--card .index-blog__post-poster {
-  width: 270px;
+  width: 100%;
   height: 180px;
   margin-bottom: 24px;
 }
@@ -69,8 +114,15 @@
 .index-blog__post--banner {
   position: relative;
   z-index: 10;
-  width: 470px;
+  width: 467px;
   height: 400px;
+  padding: 24px;
+  color: #fff;
+  align-items: flex-end;
+}
+
+.index-blog__post--banner .index-blog__post-title {
+  color: #fff;
 }
 
 .index-blog__post--banner .index-blog__post-poster {
@@ -82,6 +134,44 @@
   height: 100%;
 }
 
+.index-blog__post-info .index-blog__post-avatar {
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
 .index-blog__post-wrapper {
   z-index: 10;
+}
+
+@media screen and (max-width: 1026px) {
+  .index-blog__posts {
+    flex-wrap: wrap;
+    align-items: initial;
+    row-gap: 50px;
+  }
+
+  .index-blog__post--banner, 
+  .index-blog__post--card {
+    flex-grow: 1;
+  }
+
+  .index-blog__post--banner {
+    width: 50%;
+  }
+
+
+  .index-blog__posts-list {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    column-gap: 32px;
+  }
+  
+  .index-blog__post--list {
+    justify-content: space-between;
+    width: calc((100% - 32px) / 2);
+  }
+
+  .index-blog__post--card .index-blog__post-poster {
+    flex-grow: 1;
+  }
 }

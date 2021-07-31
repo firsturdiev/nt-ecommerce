@@ -21,3 +21,17 @@ elMenuOpen.addEventListener('click', () => {
 elMenuClose.addEventListener('click', () => {
   elMenu.classList.remove('categories--open');
 })
+
+// hover effects
+
+let elPostLink = document.querySelectorAll('.index-blog__post-link');
+
+elPostLink.forEach(link => {
+  link.addEventListener('mousemove', () => {
+    link.closest('.index-blog__post').classList.add('index-blog__post--hover')
+  });
+
+  link.addEventListener('mouseout', () => {
+    link.closest('.index-blog__post').classList.remove('index-blog__post--hover')
+  });
+})
