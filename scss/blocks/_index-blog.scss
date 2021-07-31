@@ -175,3 +175,9 @@
     flex-grow: 1;
   }
 }
+
+@media screen and (max-width: 570px) {
+  .index-blog__post--list {
+    width: 100%;
+  }
+}
