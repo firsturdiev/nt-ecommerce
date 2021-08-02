@@ -1534,6 +1534,12 @@ img {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .carousel {
+    padding-inline: 20px;
+  }
+}
+
 /* QUOTE */
 .quote {
   position: relative;
@@ -1780,6 +1786,18 @@ img {
 @media screen and (max-width: 676px) {
   .index-blog__post--list {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .index-blog {
+    padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 693px) {
+  .index-blog__post-wrapper {
+    width: auto !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
