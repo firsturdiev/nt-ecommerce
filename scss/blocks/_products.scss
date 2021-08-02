@@ -234,5 +234,5 @@
 }
 
 .products__item {
-  flex-grow: 1;
+  width: calc((100% - 64px) / 3);
 }

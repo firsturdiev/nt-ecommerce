@@ -2206,8 +2206,6 @@ img {
 }
 
 .products__item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: calc((100% - 64px) / 3);
 }
 /*# sourceMappingURL=main.css.map */
