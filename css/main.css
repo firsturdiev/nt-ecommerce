@@ -1777,7 +1777,7 @@ img {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 676px) {
   .index-blog__post--list {
     width: 100%;
   }

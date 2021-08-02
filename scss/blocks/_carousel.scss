@@ -95,6 +95,8 @@
   }
 }
 
+// MEDIA
+
 @media screen and (max-width: 1260px) {
   .carousel__btn--next {
     left: calc(100vw - 32px);
@@ -102,5 +104,11 @@
 
   .carousel__wrapper::after {
     left: calc(100vw - 88px);
+  }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .carousel {
+    padding-inline: 20px;
   }
 }

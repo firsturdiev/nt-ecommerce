@@ -176,8 +176,16 @@
   }
 }
 
-@media screen and (max-width: 570px) {
+// MEDIA
+
+@media screen and (max-width: 676px) {
   .index-blog__post--list {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .index-blog {
+    padding-inline: 20px;
   }
 }
