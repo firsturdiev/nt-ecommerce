@@ -467,6 +467,11 @@ img {
   color: #575757;
 }
 
+.product__rating {
+  display: block;
+  margin-top: 12px;
+}
+
 .product__actions {
   display: -webkit-box;
   display: -ms-flexbox;
