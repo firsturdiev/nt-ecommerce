@@ -37,16 +37,13 @@
 
 .site-header__actions-list {
   display: flex;
+  column-gap: 40px;
 
   @include list-reset;
 }
 
 .site-header__actions-item {
   position: relative;
-
-  &:not(:last-child) {
-    margin-right: 40px;
-  }
 }
 
 .site-header__actions-btn {
@@ -105,6 +102,10 @@
     position: relative;
     z-index: 1;
   }
+  
+  .site-header__inner {
+    padding-bottom: 10px;
+  }
 
   .site-header__actions-item--toggle {
     display: block;
@@ -121,10 +122,8 @@
 }
 
 @media screen and (max-width: 500px) {
-  .site-header__actions-item {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+  .site-header__actions-list {
+    column-gap: 20px;
   }
 
   .site-header__actions-btn svg {
@@ -137,3 +136,4 @@
     padding-inline: 20px;
   }
 }
+

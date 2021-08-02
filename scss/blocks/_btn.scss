@@ -8,7 +8,9 @@
   font-size: 15px;
   line-height: 22px;
   text-decoration: none;
+  border: none;
   border-radius: 12px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:active {

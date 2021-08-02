@@ -98,12 +98,30 @@
     padding-bottom: 20px;
   }
 
+  .carousel__item {
+    width: 100%;
+  }
+
+  .categories__dropdown {
+    position: initial;
+    top: initial;
+    left: initial;
+    transform: initial;
+    z-index: initial;
+    box-shadow: initial;
+  }
+
+  .categories__link:hover {
+    color: inherit;
+  }
+
   .categories__close {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 42px;
     right: 20px;
     z-index: 100;
+    padding: 0;
     background-color: transparent;
     border: none;
 

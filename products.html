@@ -11,7 +11,7 @@
 <body>
   <div class="container">
 
-    <h1 class="visually-hidden">Freshnesecom - best products</h1>
+    <h1 class="visually-hidden">Products</h1>
 
     <!-- SITE-HEADER -->
 
@@ -274,83 +274,192 @@
     <!-- SITE-CONTENT -->
 
     <main class="site-content">
-      <!-- INDEX-BANNER -->
+      <!-- PRODUCTS -->
 
-      <section class="index-banner index-row">
-        <div class="index-row__aside">
-          <h2 class="index-row__heading heading heading--quaternary">Category menu</h2>
-
-          <div class="index-row__side-menu side-menu">
-            <ul class="side-menu__list">
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Bakery</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Fruit and vegetables</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Meat and fish</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Drinks</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Kitchen</a>
-              </li>
-            </ul>
-            <a class="btn btn--medium btn--grey btn--arrow-right" href="#">More categories</a>
+      <section class="products">
+        <header class="products__header">
+          <div class="products__address">
+            <a class="products__address-link" href="./">Homepage /</a>
+            <a class="products__address-link products__address-link--active" href="./products.html">Fruit and
+              vegetables</a>
           </div>
-        </div>
 
-        <div class="index-banner__promos index-row__content">
-          <ul class="index-banner__promos-list">
-            <li class="index-banner__promos-item promo">
-              <p class="promo__subtitle heading heading--senary">Banner subfocus</p>
-              <h3 class="promo__heading heading heading--tertiary">Space for heading</h3>
-              <a class="btn btn--medium btn--stroke btn--arrow-right" href="#">Read recepies</a>
-            </li>
-
-            <li class="index-banner__promos-item promo">
-              <p class="promo__subtitle heading heading--senary">Banner subfocus</p>
-              <h3 class="promo__heading heading heading--tertiary">Space for heading</h3>
-              <a class="btn btn--medium btn--stroke btn--arrow-right" href="#">Read recepies</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-      <!-- INDEX-PRODUCTS -->
-
-      <section class="index-products index-row">
-        <div class="index-row__aside">
-          <h2 class="index-row__heading heading heading--quaternary">Best selling products</h2>
-
-          <div class="index-row__side-menu side-menu">
-            <ul class="side-menu__list">
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Kitchen</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Meat and fish</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Special nutrition</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Pharmacy</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Baby</a>
-              </li>
-            </ul>
-            <a class="btn btn--medium btn--grey btn--arrow-right" href="#">More products</a>
+          <div class="products__header-inner">
+            <h2 class="heading heading--primary">Fruit and vegetables</h2>
+            <div class="products__view-actions">
+              <button
+                class="products__view-actions-item products__view-actions-item--grid products__view-actions-item--active"
+                type="button">Grid view</button>
+              <button class="products__view-actions-item products__view-actions-item--list" type="button">List
+                view</button>
+              <p class="products__view-actions-item products__view-actions-item--count" data-count="117">Products</p>
+            </div>
           </div>
-        </div>
 
-        <div class="index-row__content">
-          <ul class="index-products__list">
-            <li class="index-products__item product">
+          <div class="products__actions">
+            <header class="products__actions-top">
+              <div class="products__actions-item products__actions-item--group">
+                <label class="products__actions-label">
+                  <input class="product__actions-field radio" type="radio" name="filter">
+                  Filter text
+                </label>
+                <label class="products__actions-label">
+                  <input class="product__actions-field radio" type="radio" name="filter">
+                  Filter text
+                </label>
+              </div>
+
+              <div class="products__actions-item">
+                <label class="products__actions-label">
+                  <input class="product__actions-field checkbox" type="checkbox" name="filter">
+                  Filter
+                </label>
+                <span class="products__actions-tip">FTR</span>
+              </div>
+
+              <div class="products__actions-item">
+                <label class="products__actions-label">
+                  <input class="product__actions-field checkbox" type="checkbox" name="filter">
+                  Filter
+                </label>
+                <span class="products__actions-tip">FTR</span>
+              </div>
+
+              <div class="products__actions-item">
+                <label class="products__actions-label">
+                  <input class="product__actions-field checkbox" type="checkbox" name="filter">
+                  Filter
+                </label>
+                <span class="products__actions-tip">12</span>
+                <select class="products__actions-select" name="filter" title="Filter">
+                  <option value="" selected disabled>Select</option>
+                  <option value="value">Value 1</option>
+                  <option value="value">Value 2</option>
+                  <option value="value">Value 3</option>
+                  <option value="value">Value 4</option>
+                  <option value="value">Value 5</option>
+                </select>
+              </div>
+            </header>
+
+            <div class="products__actions-apply">
+              <p class="products__actions-title heading heading--senary">Applied filters:</p>
+              <button class="products__actions-tag heading heading--senary">Selected filter</button>
+              <button class="products__actions-tag heading heading--senary">Selected filter</button>
+            </div>
+          </div>
+        </header>
+
+        <div class="products__content">
+          <form class="products__filter filter" action="https://echo.htmlacademy.ru" method="get">
+            <div class="filter__section filter__section--categories">
+              <h3 class="filter__heading heading heading--quaternary">Categories</h3>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <a class="filter__link" href="#">
+                    <p class="filter__item-title">Category name</p>
+                  </a>
+                  <span class="filter__tag heading heading--senary">123</span>
+                </li>
+                <li class="filter__item">
+                  <a class="filter__link" href="#">
+                    <p class="filter__item-title">Category name</p>
+                  </a>
+                  <span class="filter__tag heading heading--senary">23</span>
+                </li>
+                <li class="filter__item">
+                  <a class="filter__link" href="#">
+                    <p class="filter__item-title">Category name</p>
+                  </a>
+                  <span class="filter__tag heading heading--senary">12</span>
+                </li>
+                <li class="filter__item">
+                  <a class="filter__link" href="#">
+                    <p class="filter__item-title">Category name</p>
+                  </a>
+                  <span class="filter__tag heading heading--senary">21</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter__section">
+              <h3 class="filter__heading heading heading--quaternary">Categories</h3>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <p class="filter__item-title">Filter by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <p class="filter__item-title">Filter by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <p class="filter__item-title">Filter by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <p class="filter__item-title">Filter by brand item</p>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <p class="filter__item-title">Filter by brand item</p>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter__section">
+              <h3 class="filter__heading heading heading--quaternary">Categories</h3>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <img src="./img/icon-star-5.svg" alt="Star 5">
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <img src="./img/icon-star-4.svg" alt="Star 4">
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <img src="./img/icon-star-3.svg" alt="Star 3">
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <img src="./img/icon-star-2.svg" alt="Star 2">
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input class="filter__checkbox checkbox" type="checkbox" name="Brand name">
+                    <img src="./img/icon-star-1.svg" alt="Star 1">
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <button class="filter__btn btn btn--medium btn--green" type="submit">Apply</button>
+            <button class="btn btn--small btn--white" type="reset">Reset</button>
+          </form>
+
+          <ul class="products__list">
+            <li class="products__item product">
               <picture class="product__cover">
                 <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
               </picture>
@@ -368,7 +477,7 @@
               </div>
             </li>
 
-            <li class="index-products__item product">
+            <li class="products__item product">
               <picture class="product__cover">
                 <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
               </picture>
@@ -388,7 +497,123 @@
               </div>
             </li>
 
-            <li class="index-products__item product">
+            <li class="products__item product">
+              <picture class="product__cover">
+                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
+              </picture>
+
+              <div class="product__info">
+                <h3 class="product__title heading heading--quinary">Product title</h3>
+                <h4 class="product__description">Space for a small product description </h4>
+              </div>
+
+              <div class="product__actions">
+                <div class="product__price">
+                  <p class="product__price-default heading heading--quaternary">1.12 USD</p>
+                  <p class="product__price-sale heading heading--senary">48.56</p>
+                  <p class="product__badge heading heading--senary">-36%</p>
+                </div>
+                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
+              </div>
+            </li>
+
+            <li class="products__item product">
+              <picture class="product__cover">
+                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
+              </picture>
+
+              <div class="product__info">
+                <h3 class="product__title heading heading--quinary">Product title</h3>
+                <h4 class="product__description">Space for a small product description </h4>
+              </div>
+
+              <div class="product__actions">
+                <div class="product__price">
+                  <p class="product__price-default heading heading--quaternary">1.12 USD</p>
+                </div>
+                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
+              </div>
+            </li>
+
+            <li class="products__item product">
+              <picture class="product__cover">
+                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
+              </picture>
+
+              <div class="product__info">
+                <h3 class="product__title heading heading--quinary">Product title</h3>
+                <h4 class="product__description">Space for a small product description </h4>
+              </div>
+
+              <div class="product__actions">
+                <div class="product__price">
+                  <p class="product__price-default heading heading--quaternary">1.12 USD</p>
+                  <p class="product__price-sale heading heading--senary">48.56</p>
+                  <p class="product__badge heading heading--senary">-36%</p>
+                </div>
+                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
+              </div>
+            </li>
+
+            <li class="products__item product">
+              <picture class="product__cover">
+                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
+              </picture>
+
+              <div class="product__info">
+                <h3 class="product__title heading heading--quinary">Product title</h3>
+                <h4 class="product__description">Space for a small product description </h4>
+              </div>
+
+              <div class="product__actions">
+                <div class="product__price">
+                  <p class="product__price-default heading heading--quaternary">1.12 USD</p>
+                  <p class="product__price-sale heading heading--senary">48.56</p>
+                  <p class="product__badge heading heading--senary">-36%</p>
+                </div>
+                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
+              </div>
+            </li>
+
+            <li class="products__item product">
+              <picture class="product__cover">
+                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
+              </picture>
+
+              <div class="product__info">
+                <h3 class="product__title heading heading--quinary">Product title</h3>
+                <h4 class="product__description">Space for a small product description </h4>
+              </div>
+
+              <div class="product__actions">
+                <div class="product__price">
+                  <p class="product__price-default heading heading--quaternary">1.12 USD</p>
+                  <p class="product__price-sale heading heading--senary">48.56</p>
+                  <p class="product__badge heading heading--senary">-36%</p>
+                </div>
+                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
+              </div>
+            </li>
+
+            <li class="products__item product">
+              <picture class="product__cover">
+                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
+              </picture>
+
+              <div class="product__info">
+                <h3 class="product__title heading heading--quinary">Product title</h3>
+                <h4 class="product__description">Space for a small product description </h4>
+              </div>
+
+              <div class="product__actions">
+                <div class="product__price">
+                  <p class="product__price-default heading heading--quaternary">1.12 USD</p>
+                </div>
+                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
+              </div>
+            </li>
+
+            <li class="products__item product">
               <picture class="product__cover">
                 <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
               </picture>
@@ -408,351 +633,6 @@
               </div>
             </li>
           </ul>
-        </div>
-      </section>
-
-
-      <!-- INDEX-PRODUCTS -->
-
-      <section class="index-products index-row">
-        <div class="index-row__aside">
-          <h2 class="index-row__heading heading heading--quaternary">Best from Farmers</h2>
-
-          <div class="index-row__side-menu side-menu">
-            <ul class="side-menu__list">
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Carrots</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Tomatoes</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Potatoes</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Chicken</a>
-              </li>
-              <li class="side-menu__item">
-                <a class="side-menu__link" href="#">Pork</a>
-              </li>
-            </ul>
-            <a class="btn btn--medium btn--grey btn--arrow-right" href="#">More products</a>
-          </div>
-        </div>
-
-        <div class="index-row__content">
-          <ul class="index-products__list">
-            <li class="index-products__item product">
-              <picture class="product__cover">
-                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
-              </picture>
-
-              <div class="product__info">
-                <h3 class="product__title heading heading--quinary">Product title</h3>
-                <h4 class="product__description">Space for a small product description </h4>
-              </div>
-
-              <div class="product__actions">
-                <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
-                </div>
-                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
-              </div>
-            </li>
-
-            <li class="index-products__item product">
-              <picture class="product__cover">
-                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
-              </picture>
-
-              <div class="product__info">
-                <h3 class="product__title heading heading--quinary">Product title</h3>
-                <h4 class="product__description">Space for a small product description </h4>
-              </div>
-
-              <div class="product__actions">
-                <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">0.28 USD</p>
-                  <p class="product__price-sale heading heading--senary">48.56</p>
-                  <p class="product__badge heading heading--senary">-36%</p>
-                </div>
-                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
-              </div>
-            </li>
-
-            <li class="index-products__item product">
-              <picture class="product__cover">
-                <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
-              </picture>
-
-              <div class="product__info">
-                <h3 class="product__title heading heading--quinary">Product title</h3>
-                <h4 class="product__description">Space for a small product description </h4>
-              </div>
-
-              <div class="product__actions">
-                <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.12 USD</p>
-                  <p class="product__price-sale heading heading--senary">48.56</p>
-                  <p class="product__badge heading heading--senary">-36%</p>
-                </div>
-                <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-      <!-- CAROUSEL -->
-
-      <section class="carousel">
-        <header class="section-top">
-          <h2 class="heading heading--quaternary">Our customers says</h2>
-          <a class="btn btn--medium btn--white btn--arrow-right" href="#">More</a>
-        </header>
-
-
-        <div class="carousel__wrapper">
-          <button class="carousel__btn carousel__btn--prev" aria-label="Previous quote"></button>
-          <button class="carousel__btn carousel__btn--next" aria-label="Next quote"></button>
-        </div>
-
-        <ul class="carousel__list">
-          <li class="carousel__item quote">
-            <blockquote class="quote__text heading heading--quinary">“ This is an super space for your customers qoute.
-              Don’t
-              worry it works smooth as
-              pie. You will get all what you need by writiing a text here “</blockquote>
-            <p class="quote__author heading heading--senary">Asror Akmalovich</p>
-            <img class="quote__author-avatar" src="./img/avatar-quote-4.jpg" width="48" height="48"
-              srcset="./img/avatar-quote-4@2x.jpg 2x" alt="Avatar photo">
-          </li>
-
-          <li class="carousel__item quote">
-            <blockquote class="quote__text heading heading--quinary">“ This is an super space for your customers qoute.
-              Don’t
-              worry it works smooth as
-              pie. You will get all what you need by writiing a text here “</blockquote>
-            <p class="quote__author heading heading--senary">Asror Akmalovich</p>
-            <img class="quote__author-avatar" src="./img/avatar-quote-4.jpg" width="48" height="48"
-              srcset="./img/avatar-quote-4@2x.jpg 2x" alt="Avatar photo">
-          </li>
-
-          <li class="carousel__item quote">
-            <blockquote class="quote__text heading heading--quinary">“ This is an super space for your customers qoute.
-              Don’t
-              worry it works smooth as
-              pie. You will get all what you need by writiing a text here “</blockquote>
-            <p class="quote__author heading heading--senary">Asror Akmalovich</p>
-            <img class="quote__author-avatar" src="./img/avatar-quote-4.jpg" width="48" height="48"
-              srcset="./img/avatar-quote-4@2x.jpg 2x" alt="Avatar photo">
-          </li>
-
-          <li class="carousel__item quote">
-            <blockquote class="quote__text heading heading--quinary">“ This is an super space for your customers qoute.
-              Don’t
-              worry it works smooth as
-              pie. You will get all what you need by writiing a text here “</blockquote>
-            <p class="quote__author heading heading--senary">Asror Akmalovich</p>
-            <img class="quote__author-avatar" src="./img/avatar-quote-4.jpg" width="48" height="48"
-              srcset="./img/avatar-quote-4@2x.jpg 2x" alt="Avatar photo">
-          </li>
-        </ul>
-      </section>
-
-
-      <!-- RECOMMENDATIONS -->
-
-      <section class="recommendations">
-        <header class="section-top">
-          <h2 class="heading heading--quaternary">Featured products</h2>
-          <a class="btn btn--medium btn--white btn--arrow-right" href="#">More</a>
-        </header>
-
-        <ul class="recommendations__list">
-          <li class="recommendations__item product">
-            <picture class="product__cover">
-              <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
-            </picture>
-
-            <div class="product__info">
-              <h3 class="product__title heading heading--quinary">Product title</h3>
-              <h4 class="product__description">Space for a small product description </h4>
-            </div>
-
-            <div class="product__actions">
-              <div class="product__price">
-                <p class="product__price-default heading heading--quaternary">3.26 USD</p>
-              </div>
-              <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
-            </div>
-          </li>
-
-          <li class="recommendations__item product">
-            <picture class="product__cover">
-              <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
-            </picture>
-
-            <div class="product__info">
-              <h3 class="product__title heading heading--quinary">Product title</h3>
-              <h4 class="product__description">Space for a small product description </h4>
-            </div>
-
-            <div class="product__actions">
-              <div class="product__price">
-                <p class="product__price-default heading heading--quaternary">1.48 USD</p>
-              </div>
-              <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
-            </div>
-          </li>
-
-          <li class="recommendations__item product">
-            <picture class="product__cover">
-              <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
-            </picture>
-
-            <div class="product__info">
-              <h3 class="product__title heading heading--quinary">Product title</h3>
-              <h4 class="product__description">Space for a small product description </h4>
-            </div>
-
-            <div class="product__actions">
-              <div class="product__price">
-                <p class="product__price-default heading heading--quaternary">0.28 USD</p>
-                <p class="product__price-sale heading heading--senary">48.56</p>
-                <p class="product__badge heading heading--senary">-36%</p>
-              </div>
-              <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
-            </div>
-          </li>
-
-          <li class="recommendations__item product">
-            <picture class="product__cover">
-              <img class="product__cover-img" src="./img/bg-product.jpg" width="236" height="180" alt="Product photo">
-            </picture>
-
-            <div class="product__info">
-              <h3 class="product__title heading heading--quinary">Product title</h3>
-              <h4 class="product__description">Space for a small product description </h4>
-            </div>
-
-            <div class="product__actions">
-              <div class="product__price">
-                <p class="product__price-default heading heading--quaternary">1.12 USD</p>
-                <p class="product__price-sale heading heading--senary">48.56</p>
-                <p class="product__badge heading heading--senary">-36%</p>
-              </div>
-              <a class="product__actions-btn btn btn--small btn--green" href="#">Buy now</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- INDEX-BLOG -->
-
-      <section class="index-blog">
-        <h2 class="visually-hidden">Blog</h2>
-
-        <header class="section-top">
-          <h2 class="heading heading--quaternary">Read our Blog posts</h2>
-          <a class="btn btn--medium btn--white btn--arrow-right" href="#">Go to Blog</a>
-        </header>
-
-        <div class="index-blog__posts">
-          <article class="index-blog__post index-blog__post--banner">
-            <div class="index-blog__post-wrapper">
-              <a class="index-blog__post-tag tags__tag" href="#">
-                <h3 class="tags__tag-title heading heading--senary">Dinner tips</h3>
-              </a>
-              <a class="index-blog__post-link" href="#">
-                <h3 class="index-blog__post-title heading heading--tertiary">Our chef tips for a great and tasty dinner
-                  ready in 20 minutes</h3>
-              </a>
-              <div class="index-blog__post-info">
-                <img class="index-blog__post-avatar" src="./img/avatar-blog.png" alt="Author avatar photo" width="32"
-                  height="32">
-                <p class="index-blog__post-author">Samandar Turdiev</p>
-                <time class="index-blog__post-date" datetime="2020-06-17">17.06.2020</time>
-              </div>
-            </div>
-
-            <div class="index-blog__post-poster">
-              <img src="./img/bg-poster-1.jpg" width="469" height="401" alt="Blog poster">
-            </div>
-          </article>
-
-          <article class="index-blog__post index-blog__post--card">
-            <div class="index-blog__post-wrapper">
-              <a class="index-blog__post-tag tags__tag" href="#">
-                <h3 class="tags__tag-title heading heading--senary">Vegetable</h3>
-              </a>
-              <a class="index-blog__post-link" href="#">
-                <h3 class="index-blog__post-title heading heading--quinary">Which vegetable your family will love and
-                  want’s eat each day</h3>
-              </a>
-              <div class="index-blog__post-info">
-                <p class="index-blog__post-author">Samandar Turdiev</p>
-                <time class="index-blog__post-date" datetime="2020-06-15">15.06.2020</time>
-              </div>
-            </div>
-
-            <div class="index-blog__post-poster">
-              <img src="./img/bg-poster-2.jpg" width="270" height="181" alt="Blog poster">
-            </div>
-          </article>
-
-          <ol class="index-blog__posts-list">
-            <li class="index-blog__post index-blog__post--list">
-              <div class="index-blog__post-wrapper">
-                <a class="index-blog__post-link" href="#">
-                  <h3 class="index-blog__post-title heading heading--quinary">Salat is kinda good start to your morning
-                    routines</h3>
-                </a>
-                <div class="index-blog__post-info">
-                  <p class="index-blog__post-author">Samandar Turdiev</p>
-                  <time class="index-blog__post-date" datetime="2020-01-14">14.01.2020</time>
-                </div>
-              </div>
-
-              <div class="index-blog__post-poster">
-                <img src="./img/bg-poster.jpg" width="96" height="96" alt="Blog poster">
-              </div>
-            </li>
-
-            <li class="index-blog__post index-blog__post--list">
-              <div class="index-blog__post-wrapper">
-                <a class="index-blog__post-link" href="#">
-                  <h3 class="index-blog__post-title heading heading--quinary">Our chef tips for a great and healthy
-                    breakfast</h3>
-                </a>
-                <div class="index-blog__post-info">
-                  <p class="index-blog__post-author">Samandar Turdiev</p>
-                  <time class="index-blog__post-date" datetime="2020-01-14">14.01.2020</time>
-                </div>
-              </div>
-
-              <div class="index-blog__post-poster">
-                <img src="./img/bg-poster.jpg" width="96" height="96" alt="Blog poster">
-              </div>
-            </li>
-
-            <li class="index-blog__post index-blog__post--list">
-              <div class="index-blog__post-wrapper">
-                <a class="index-blog__post-link" href="#">
-                  <h3 class="index-blog__post-title heading heading--quinary">Prepare a simple and delicious breads</h3>
-                </a>
-                <div class="index-blog__post-info">
-                  <p class="index-blog__post-author">Samandar Turdiev</p>
-                  <time class="index-blog__post-date" datetime="2020-01-14">14.01.2020</time>
-                </div>
-              </div>
-
-              <div class="index-blog__post-poster">
-                <img src="./img/bg-poster.jpg" width="96" height="96" alt="Blog poster">
-              </div>
-            </li>
-          </ol>
         </div>
       </section>
     </main>

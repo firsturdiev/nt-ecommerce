@@ -1,0 +1,77 @@
+/* FILTER */
+
+.filter__section {
+  &:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+
+.filter__list {
+  @include list-reset;
+}
+
+.filter__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.filter__label {
+  display: flex;
+  align-items: center;
+}
+
+.filter__heading {
+  margin-bottom: 16px;
+}
+
+.filter__checkbox {
+  margin-right: 8px;
+}
+
+.filter__item-title {
+  margin: 0;
+}
+
+.filter__link {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+    color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.filter__btn {
+  margin-right: 34px;
+  padding: 10.5px 14px;
+}
+
+.filter__section--categories .filter__item {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter__tag {
+  padding: 0 8px;
+  color: $color-green;
+  background-color: #f4f8ec;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e3ebd4;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
