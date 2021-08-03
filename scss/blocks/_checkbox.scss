@@ -1,0 +1,23 @@
+/* CHECKBOX */
+
+.checkbox {
+  appearance: none;
+  background-color: #f9f9f9;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 3px;
+
+  &:checked {
+    background-color: $color-green;
+    background-image: url("../../img/icon-check.svg");
+
+    @include bg-full;
+
+    background-size: 14px 10px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

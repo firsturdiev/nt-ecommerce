@@ -61,3 +61,125 @@
   text-decoration: line-through;
   color: #a9a9a9;
 }
+
+.product:not(.product--list) {
+  .product__info-list,
+  .product__actions-text,
+  .product__actions-caption,
+  .product__actions-details,
+  .product__actions-wishlist {
+    display: none;
+  }
+}
+
+// PRODUCTS--LIST
+
+.product--list {
+  display: flex;
+  align-items: center;
+  row-gap: 32px;
+  padding: 0;
+  padding-right: 32px;
+}
+
+.product--list .product__cover {
+  margin-right: 32px;
+  margin-bottom: initial;
+}
+
+.product--list .product__cover-img {
+  width: 268px;
+  height: 280px;
+  border-top-right-radius: initial;
+  border-bottom-right-radius: initial;
+}
+
+.product--list .product__info {
+  flex-grow: 1;
+  margin-right: 96px;
+  margin-bottom: 0;
+}
+
+.product--list .product__title {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.product--list .product__badge {
+  display: none;
+}
+
+.product--list .product__rating {
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.product--list .product__info-list {
+  margin: 0;
+}
+
+.product--list .product__info-item {
+  display: flex;
+  align-items: flex-start;
+  color: #a9a9a9;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.product--list .product__info-term {
+  width: 74px;
+  margin-right: 32px;
+}
+
+.product--list .product__info-desc {
+  margin: 0;
+}
+
+.product--list .product__info-desc--highlight {
+  color: $color-green;
+}
+
+.product--list .product__actions {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product--list .product__actions-caption {
+  margin-top: 16px;
+  color: #a9a9a9;
+}
+
+.product--list .product__actions-text {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.product--list .product__actions-buy {
+  display: none;
+}
+
+.product--list .product__actions-details {
+  margin-left: 8px;
+  margin-bottom: 12px;
+}
+
+.product--list .product__actions-wishlist {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url("../../img/icon-heart.svg");
+
+    @include bg-full;
+  }
+}

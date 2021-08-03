@@ -10,9 +10,10 @@ elAccordionToggle.forEach(toggle => {
 
 // menu
 
+let elMenu = document.querySelector('.categories');
 let elMenuOpen = document.querySelector('.js-menu-open');
 let elMenuClose = document.querySelector('.categories__close');
-let elMenu = document.querySelector('.categories');
+let elsMenuCategories = document.querySelectorAll('.categories__item');
 
 elMenuOpen.addEventListener('click', () => {
   elMenu.classList.add('categories--open');
@@ -21,6 +22,8 @@ elMenuOpen.addEventListener('click', () => {
 elMenuClose.addEventListener('click', () => {
   elMenu.classList.remove('categories--open');
 })
+
+// if (window.wid)
 
 // hover effects
 
@@ -34,4 +37,29 @@ elPostLink.forEach(link => {
   link.addEventListener('mouseout', () => {
     link.closest('.index-blog__post').classList.remove('index-blog__post--hover')
   });
+})
+
+
+// products
+
+let elsProduct = document.querySelectorAll('.products__item');
+let elProductGrid = document.querySelector('.js-products-grid');
+let elProductList = document.querySelector('.js-products-list');
+
+elProductList.addEventListener('click', () => {
+  elProductGrid.classList.remove('products__view-actions-item--grid--active')
+  elProductList.classList.add('products__view-actions-item--list--active');
+
+  elsProduct.forEach(product => {
+    product.classList.add('product--list')
+  })
+})
+
+elProductGrid.addEventListener('click', () => {
+  elProductList.classList.remove('products__view-actions-item--list--active');
+  elProductGrid.classList.add('products__view-actions-item--grid--active')
+
+  elsProduct.forEach(product => {
+    product.classList.remove('product--list')
+  })
 })
