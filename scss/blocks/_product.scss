@@ -10,6 +10,7 @@
 
 .product__cover {
   display: block;
+  flex-shrink: 0;
   margin-bottom: 16px;
 }
 
@@ -72,7 +73,7 @@
   }
 }
 
-// PRODUCTS--LIST
+/* PRODUCT--lIST */
 
 .product--list {
   display: flex;
@@ -80,106 +81,172 @@
   row-gap: 32px;
   padding: 0;
   padding-right: 32px;
-}
 
-.product--list .product__cover {
-  margin-right: 32px;
-  margin-bottom: initial;
-}
+  // INNER
 
-.product--list .product__cover-img {
-  width: 268px;
-  height: 280px;
-  border-top-right-radius: initial;
-  border-bottom-right-radius: initial;
-}
+  .product__cover {
+    margin-right: 32px;
+    margin-bottom: initial;
+  }
 
-.product--list .product__info {
-  flex-grow: 1;
-  margin-right: 96px;
-  margin-bottom: 0;
-}
+  .product__cover-img {
+    width: 268px;
+    height: 280px;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
+  }
 
-.product--list .product__title {
-  font-size: 18px;
-  line-height: 27px;
-}
+  .product__info {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 
-.product--list .product__badge {
-  display: none;
-}
+  .product__title {
+    font-size: 18px;
+    line-height: 27px;
+  }
 
-.product--list .product__rating {
-  margin-top: 8px;
-  margin-bottom: 25px;
-}
+  .product__badge {
+    display: none;
+  }
 
-.product--list .product__info-list {
-  margin: 0;
-}
+  .product__rating {
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
 
-.product--list .product__info-item {
-  display: flex;
-  align-items: flex-start;
-  color: #a9a9a9;
+  .product__info-list {
+    @include list-reset;
+  }
 
-  &:not(:last-child) {
+  .product__info-item {
+    display: flex;
+    column-gap: 32px;
+    color: #a9a9a9;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .product__info-term,
+  .product__info-desc {
+    margin: 0;
+
+    @include text-overflow;
+  }
+
+  .product__info-term {
+    width: 74px;
+  }
+
+  .product__info-desc {
+    width: 131px;
+  }
+
+  .product__info-desc--highlight {
+    color: $color-green;
+  }
+
+  .product__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product__actions-caption {
+    margin-top: 16px;
+    color: #a9a9a9;
+  }
+
+  .product__actions-text {
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a9a9a9;
+  }
+
+  .product__actions-buy {
+    display: none;
+  }
+
+  .product__actions-details {
+    margin-left: 8px;
     margin-bottom: 12px;
+  }
+
+  .product__actions-wishlist {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      background-image: url("../../img/icon-heart.svg");
+
+      @include bg-full;
+    }
   }
 }
 
-.product--list .product__info-term {
-  width: 74px;
-  margin-right: 32px;
+// MEDIA
+
+@media screen and (max-width: 1150px) and (min-width: 1025px) {
+  .product:not(.product--list) {
+    width: calc((100% - 32px) / 2);
+
+    // INNNER
+
+    .product__cover-img {
+      height: 200px;
+    }
+  }
 }
 
-.product--list .product__info-desc {
-  margin: 0;
+@media screen and (max-width: 1135px) and (min-width: 1025px) {
+  .product--list {
+    // INNER
+
+    .product__cover {
+      margin-right: 25px;
+    }
+
+    .product__cover-img {
+      width: 210px;
+      height: 250px;
+    }
+  }
 }
 
-.product--list .product__info-desc--highlight {
-  color: $color-green;
-}
+@media screen and (max-width: 1060px) and (min-width: 1025px) {
+  .product--list {
+    padding-right: 25px;
 
-.product--list .product__actions {
-  flex-direction: column;
-  align-items: flex-start;
-}
+    // INNER
 
-.product--list .product__actions-caption {
-  margin-top: 16px;
-  color: #a9a9a9;
-}
+    .product__description {
+      width: 194px;
 
-.product--list .product__actions-text {
-  margin-top: 0;
-  margin-bottom: 26px;
-  font-size: 12px;
-  line-height: 16px;
-  color: #a9a9a9;
-}
+      @include text-overflow;
+    }
 
-.product--list .product__actions-buy {
-  display: none;
-}
+    .product__info-item {
+      column-gap: 20px;
+    }
 
-.product--list .product__actions-details {
-  margin-left: 8px;
-  margin-bottom: 12px;
-}
+    .product__info-desc {
+      width: 100px;
+    }
 
-.product--list .product__actions-wishlist {
-  display: flex;
-  align-items: center;
-  margin-left: 8px;
+    .product__actions-details {
+      margin-left: initial;
+    }
 
-  &::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    background-image: url("../../img/icon-heart.svg");
-
-    @include bg-full;
+    .product__actions-wishlist {
+      margin-left: initial;
+    }
   }
 }

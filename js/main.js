@@ -63,3 +63,18 @@ elProductGrid.addEventListener('click', () => {
     product.classList.remove('product--list')
   })
 })
+
+// filter menu
+
+let elFilter = document.querySelector('.products__filter');
+let elFilterToggle = document.querySelector('.products__filter-toggle');
+
+elFilterToggle.addEventListener('click', () => {
+  elFilter.classList.add('filter--open');
+})
+
+window.addEventListener('click', (e) => {
+  if (e.target == elFilter) {
+    elFilter.classList.remove('filter--open')
+  }
+})

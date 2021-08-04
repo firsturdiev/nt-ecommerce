@@ -104,7 +104,8 @@
   z-index: 5;
   width: 20px;
   height: 20px;
-  background: #fff;
+  padding: 0;
+  background-color: #fff;
   border: 1px solid #d1d1d1;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -140,11 +141,49 @@
   align-items: center;
 
   &::after {
-      content: "";
-      width: 4px;
-      height: 1px;
-      margin: 0 14px;
-      margin-top: 18px;
-      background-color: #A9A9A9;
+    content: "";
+    width: 4px;
+    height: 1px;
+    margin: 0 14px;
+    margin-top: 18px;
+    background-color: #a9a9a9;
+  }
+}
+
+// MEDIA
+
+@media screen and (max-width: $breakpoint-large) {
+  .filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-y: auto;
+    width: 100% !important;
+    height: 100vh;
+    background-color: transparent;
+    transition: background-color .3s ease;
+    pointer-events: none;
+  }
+
+  .filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter--open {
+    background-color: rgba(0, 0, 0, 0.15);
+    pointer-events: initial;
+
+    .filter__inner {
+      transform: initial;
     }
+  }
+
+  .filter__inner {
+    width: 40%;
+    transform: translateX(-100%);
+    padding: 20px 45px;
+    background-color: #fff;
+    transition: transform 0.4s ease;
+  }
 }
