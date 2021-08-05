@@ -207,11 +207,18 @@
 .products__actions-apply {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 12px;
+  row-gap: 12px;
 }
 
 .products__actions-title {
   color: #a9a9a9;
+}
+
+.products__actions-tags {
+  display: flex;
+  gap: 12px;
 }
 
 .products__actions-tag {
@@ -268,6 +275,7 @@
     background-color: transparent;
     background-image: url("../../img/icon-filter.svg");
     border: none;
+    cursor: pointer;
 
     @include bg-full;
   }
@@ -381,5 +389,18 @@
   .products__view-actions-item--grid,
   .products__view-actions-item--list {
     display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .products__actions-top {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .products__actions-tags {
+    width: 100%;
+    order: 3;
   }
 }
