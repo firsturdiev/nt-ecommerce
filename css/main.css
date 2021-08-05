@@ -1090,7 +1090,7 @@ img {
 
 @media screen and (max-width: 560px) {
   .categories {
-    position: absolute;
+    position: fixed;
     z-index: 99;
     background-color: #f9f9f9;
     width: 60%;
@@ -2002,7 +2002,7 @@ img {
             transform: initial;
   }
   .filter__inner {
-    width: 40%;
+    width: 346px;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     padding: 20px 45px;
@@ -2726,6 +2726,13 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .products__view-actions-item--grid,
+  .products__view-actions-item--list {
+    display: none;
   }
 }
 

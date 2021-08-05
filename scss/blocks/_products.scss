@@ -376,3 +376,10 @@
     margin-bottom: 25px;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .products__view-actions-item--grid,
+  .products__view-actions-item--list {
+    display: none;
+  }
+}

@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 560px) {
   .categories {
-    position: absolute;
+    position: fixed;
     z-index: 99;
     background-color: #f9f9f9;
     width: 60%;
