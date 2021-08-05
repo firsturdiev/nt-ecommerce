@@ -38,8 +38,18 @@
 }
 
 .product__rating {
-  display: block;
+  position: relative;
+  display: inline-flex;
   margin-top: 12px;
+}
+
+.product__rating-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  --star-width: calc(88px / 5 * var(--star-count));
+  clip: rect(0 var(--star-width) var(--star-width) 0);
 }
 
 .product__actions {

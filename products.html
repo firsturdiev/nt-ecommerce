@@ -71,10 +71,7 @@
             <li class="site-header__actions-item">
               <a class="site-header__actions-btn" href="#" aria-label="Profile">
                 <svg width="24" height="24" fill="none" viewBox='0 0 24 24' xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L21 22" stroke="currentColor" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M12 11.98a5 5 0 100-10 5 5 0 000 10z" stroke="currentColor" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="bevel" />
+                  <path d="M3 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L21 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M12 11.98a5 5 0 100-10 5 5 0 000 10z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel" />
                 </svg>
               </a>
             </li>
@@ -277,20 +274,16 @@
       <form class="products" action="https://echo.htmlacademy.ru" method="get">
         <header class="products__header">
           <div class="products__address">
-            <a class="products__address-link" href="./">Homepage /</a>
-            <a class="products__address-link products__address-link--active" href="./products.html">Fruit and
-              vegetables</a>
+            <a class="products__address-link" href="index.html">Homepage /</a>
+            <a class="products__address-link products__address-link--active" href="./products.html">Fruit and vegetables</a>
           </div>
 
           <div class="products__header-inner">
             <h2 class="heading heading--primary">Fruit and vegetables</h2>
             <div class="products__view-actions">
               <button
-                class="products__view-actions-item products__view-actions-item--grid products__view-actions-item--grid--active js-products-grid"
-                type="button">Grid view</button>
-              <button class="products__view-actions-item products__view-actions-item--list js-products-list"
-                type="button">List
-                view</button>
+                class="products__view-actions-item products__view-actions-item--grid products__view-actions-item--grid--active js-products-grid" type="button">Grid view</button>
+              <button class="products__view-actions-item products__view-actions-item--list js-products-list" type="button">List view</button>
               <div class="products__count products__header-count">
                 <span class="products__count-badge heading heading--senary">117</span>
                 <span class="products__count-text">Products</span>
@@ -302,54 +295,53 @@
             <div class="products__actions-top">
               <div class="products__actions-item products__actions-item--group">
                 <label class="products__actions-label">
-                  <input class="products__actions-field radio" type="radio" name="filter">
-                  Filter text
+                  <input class="products__actions-field radio" type="radio" name="price_filter" value="Cheap">
+                  Cheap
                 </label>
                 <label class="products__actions-label">
-                  <input class="products__actions-field radio" type="radio" name="filter">
-                  Filter text
+                  <input class="products__actions-field radio" type="radio" name="price_filter" value="Expensive">
+                  Expensive
                 </label>
               </div>
 
               <div class="products__actions-item">
                 <label class="products__actions-label">
-                  <input class="products__actions-field checkbox" type="checkbox" name="filter">
-                  Filter
+                  <input class="products__actions-field checkbox" type="checkbox" name="filter1" value="filter1">
+                  Filter1
                 </label>
                 <span class="products__actions-tip">FTR</span>
               </div>
 
               <div class="products__actions-item">
                 <label class="products__actions-label">
-                  <input class="products__actions-field checkbox" type="checkbox" name="filter">
-                  Filter
+                  <input class="products__actions-field checkbox" type="checkbox" name="filter2" value="filter2">
+                  Filter2
                 </label>
                 <span class="products__actions-tip">FTR</span>
               </div>
 
               <div class="products__actions-item">
                 <label class="products__actions-label">
-                  <input class="products__actions-field checkbox" type="checkbox" name="filter">
-                  Filter
+                  <input class="products__actions-field checkbox" type="checkbox" name="category_filter">
+                  Category
                 </label>
                 <span class="products__actions-tip">12</span>
-                <select class="products__actions-select" name="filter" title="Filter">
+                <select class="products__actions-select" name="value_filter" title="Value Filter">
                   <option value="" selected disabled>Select</option>
-                  <option value="value">Value 1</option>
-                  <option value="value">Value 2</option>
-                  <option value="value">Value 3</option>
-                  <option value="value">Value 4</option>
-                  <option value="value">Value 5</option>
+                  <option value="value1">Value 1</option>
+                  <option value="value2">Value 2</option>
+                  <option value="value3">Value 3</option>
+                  <option value="value4">Value 4</option>
+                  <option value="value5">Value 5</option>
                 </select>
               </div>
-
-              <button class="products__filter-toggle" type="button" aria-label="Open filter side"></button>
             </div>
 
             <div class="products__actions-apply">
               <p class="products__actions-title heading heading--senary">Applied filters:</p>
               <button class="products__actions-tag heading heading--senary" type="button">Selected filter</button>
               <button class="products__actions-tag heading heading--senary" type="button">Selected filter</button>
+              <button class="products__filter-toggle" type="button" aria-label="Open filter section"></button>
             </div>
           </div>
         </header>
@@ -363,25 +355,25 @@
                 <ul class="filter__list">
                   <li class="filter__item">
                     <a class="filter__link" href="#">
-                      <p class="filter__item-title">Category name</p>
+                      <p class="filter__item-title">Bakery</p>
                     </a>
                     <span class="filter__tag heading heading--senary">123</span>
                   </li>
                   <li class="filter__item">
                     <a class="filter__link" href="#">
-                      <p class="filter__item-title">Category name</p>
+                      <p class="filter__item-title">Fruit and vegetables</p>
                     </a>
                     <span class="filter__tag heading heading--senary">23</span>
                   </li>
                   <li class="filter__item">
                     <a class="filter__link" href="#">
-                      <p class="filter__item-title">Category name</p>
+                      <p class="filter__item-title">Meat and fish</p>
                     </a>
                     <span class="filter__tag heading heading--senary">12</span>
                   </li>
                   <li class="filter__item">
                     <a class="filter__link" href="#">
-                      <p class="filter__item-title">Category name</p>
+                      <p class="filter__item-title">Drinks</p>
                     </a>
                     <span class="filter__tag heading heading--senary">21</span>
                   </li>
@@ -394,31 +386,31 @@
                   <li class="filter__item">
                     <label class="filter__label">
                       <input class="filter__checkbox checkbox" type="checkbox" name="brand__name">
-                      <span class="filter__item-title">Filter by brand item</span>
+                      <span class="filter__item-title">Qanotchi</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
                       <input class="filter__checkbox checkbox" type="checkbox" name="brand__name">
-                      <span class="filter__item-title">Filter by brand item</span>
+                      <span class="filter__item-title">Oq-tepa lavash</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
                       <input class="filter__checkbox checkbox" type="checkbox" name="brand__name">
-                      <span class="filter__item-title">Filter by brand item</span>
+                      <span class="filter__item-title">Evos</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
                       <input class="filter__checkbox checkbox" type="checkbox" name="brand__name">
-                      <span class="filter__item-title">Filter by brand item</span>
+                      <span class="filter__item-title">Rayhon</span>
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
                       <input class="filter__checkbox checkbox" type="checkbox" name="brand__name">
-                      <span class="filter__item-title">Filter by brand item</span>
+                      <span class="filter__item-title">Yalpiz</span>
                     </label>
                   </li>
                 </ul>
@@ -429,31 +421,31 @@
                 <ul class="filter__list">
                   <li class="filter__item">
                     <label class="filter__label">
-                      <input class="filter__checkbox checkbox" type="checkbox" name="rating">
+                      <input class="filter__checkbox checkbox" type="checkbox" name="rating_five_star">
                       <img src="./img/icon-star-5.svg" alt="Star 5">
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
-                      <input class="filter__checkbox checkbox" type="checkbox" name="rating">
+                      <input class="filter__checkbox checkbox" type="checkbox" name="rating_four_star">
                       <img src="./img/icon-star-4.svg" alt="Star 4">
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
-                      <input class="filter__checkbox checkbox" type="checkbox" name="rating">
+                      <input class="filter__checkbox checkbox" type="checkbox" name="rating_three_star">
                       <img src="./img/icon-star-3.svg" alt="Star 3">
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
-                      <input class="filter__checkbox checkbox" type="checkbox" name="rating">
+                      <input class="filter__checkbox checkbox" type="checkbox" name="rating_two_star">
                       <img src="./img/icon-star-2.svg" alt="Star 2">
                     </label>
                   </li>
                   <li class="filter__item">
                     <label class="filter__label">
-                      <input class="filter__checkbox checkbox" type="checkbox" name="rating">
+                      <input class="filter__checkbox checkbox" type="checkbox" name="rating_one_star">
                       <img src="./img/icon-star-1.svg" alt="Star 1">
                     </label>
                   </li>
@@ -466,8 +458,7 @@
                   <div class="filter__range-inner">
                     <button class="filter__range-btn filter__range-btn--left" type="button"
                       aria-label="Range button"></button>
-                    <button class="filter__range-btn filter__range-btn--right" type="button"
-                      aria-label="Range button"></button>
+                    <button class="filter__range-btn filter__range-btn--right" type="button" aria-label="Range button"></button>
                   </div>
                 </div>
 
@@ -500,8 +491,11 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 4" src="./img/icon-star-black.svg" width="88"
+                    height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -533,7 +527,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -554,8 +548,11 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 5" src="./img/icon-star-black.svg" width="88"
+                    height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -587,7 +584,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -608,8 +605,10 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 3" src="./img/icon-star-black.svg" width="88" height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -641,7 +640,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -662,8 +661,10 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 3" src="./img/icon-star-black.svg" width="88" height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -695,7 +696,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -716,8 +717,10 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 4" src="./img/icon-star-black.svg" width="88" height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -749,7 +752,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -770,8 +773,10 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 1" src="./img/icon-star-black.svg" width="88" height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -803,7 +808,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -824,8 +829,10 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 3" src="./img/icon-star-black.svg" width="88" height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -857,7 +864,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -878,8 +885,10 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 5" src="./img/icon-star-black.svg" width="88" height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -911,7 +920,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
@@ -932,8 +941,10 @@
               <div class="product__info">
                 <h3 class="product__title heading heading--quinary">Product title</h3>
                 <h4 class="product__description">Space for a small product description</h4>
-                <img class="product__rating" src="./img/icon-black-star-4.svg" width="89" height="16"
-                  alt="Product with 4 star">
+                <div class="product__rating" aria-label="4 star">
+                  <img src="./img/icon-star-white.svg" width="88" height="16" alt="" aria-hidden="true">
+                  <img class="product__rating-star" style="--star-count: 2" src="./img/icon-star-black.svg" width="88" height="16" alt="" aria-hidden="true">
+                </div>
 
                 <dl class="product__info-list">
                   <div class="product__info-item">
@@ -965,7 +976,7 @@
 
               <div class="product__actions">
                 <div class="product__price">
-                  <p class="product__price-default heading heading--quaternary">1.48 USD</p>
+                  <p class="product__price-default heading heading--quaternary">36.99 USD</p>
                   <p class="product__price-sale heading heading--senary">48.56</p>
                   <p class="product__badge heading heading--senary">-36%</p>
                   <p class="product__actions-caption heading heading--senary">Free Shipping</p>
