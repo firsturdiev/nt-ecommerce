@@ -404,3 +404,9 @@
     order: 3;
   }
 }
+
+@media screen and (max-width: $breakpoint-small) {
+  .products {
+    padding: 0 20px;
+  }
+}

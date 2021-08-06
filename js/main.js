@@ -10,20 +10,20 @@ elAccordionToggle.forEach(toggle => {
 
 // menu
 
-let elMenu = document.querySelector('.categories');
-let elMenuOpen = document.querySelector('.js-menu-open');
-let elMenuClose = document.querySelector('.categories__close');
-let elsMenuCategories = document.querySelectorAll('.categories__item');
+if (document.documentElement.clientWidth <= 560) {
+  let elMenu = document.querySelector('.categories');
+  let elMenuOpen = document.querySelector('.js-menu-open');
+  let elMenuClose = document.querySelector('.categories__close');
+  let elsMenuCategories = document.querySelectorAll('.categories__item');
 
-elMenuOpen.addEventListener('click', () => {
-  elMenu.classList.add('categories--open');
-})
+  elMenuOpen.addEventListener('click', () => {
+    elMenu.classList.add('categories--open');
+  })
 
-elMenuClose.addEventListener('click', () => {
-  elMenu.classList.remove('categories--open');
-})
-
-// if (window.wid)
+  elMenuClose.addEventListener('click', () => {
+    elMenu.classList.remove('categories--open');
+  })
+}
 
 // hover effects
 
@@ -43,38 +43,46 @@ elPostLink.forEach(link => {
 // products
 
 let elsProduct = document.querySelectorAll('.products__item');
-let elProductGrid = document.querySelector('.js-products-grid');
-let elProductList = document.querySelector('.js-products-list');
+let elProductGridBtn = document.querySelector('.js-product-grid');
+let elProductListBtn = document.querySelector('.js-product-list');
 
-elProductList.addEventListener('click', () => {
-  elProductGrid.classList.remove('products__view-actions-item--grid--active')
-  elProductList.classList.add('products__view-actions-item--list--active');
+if (elProductListBtn) {
+  elProductListBtn.addEventListener('click', () => {
+    elProductGridBtn.classList.remove('products__view-actions-item--grid--active')
+    elProductListBtn.classList.add('products__view-actions-item--list--active');
 
-  elsProduct.forEach(product => {
-    product.classList.add('product--list')
+    elsProduct.forEach(product => {
+      product.classList.add('product--list')
+    })
   })
-})
+}
 
-elProductGrid.addEventListener('click', () => {
-  elProductList.classList.remove('products__view-actions-item--list--active');
-  elProductGrid.classList.add('products__view-actions-item--grid--active')
+if (elProductGridBtn) {
+  elProductGridBtn.addEventListener('click', () => {
+    elProductListBtn.classList.remove('products__view-actions-item--list--active');
+    elProductGridBtn.classList.add('products__view-actions-item--grid--active')
 
-  elsProduct.forEach(product => {
-    product.classList.remove('product--list')
+    elsProduct.forEach(product => {
+      product.classList.remove('product--list')
+    })
   })
-})
+}
 
 // filter menu
 
-let elFilter = document.querySelector('.products__filter');
-let elFilterToggle = document.querySelector('.products__filter-toggle');
+if (document.documentElement.clientWidth <= 1024) {
+  let elFilter = document.querySelector('.products__filter');
+  let elFilterToggle = document.querySelector('.products__filter-toggle');
 
-elFilterToggle.addEventListener('click', () => {
-  elFilter.classList.add('filter--open');
-})
-
-window.addEventListener('click', (e) => {
-  if (e.target == elFilter) {
-    elFilter.classList.remove('filter--open')
+  if (elFilterToggle) {
+    elFilterToggle.addEventListener('click', () => {
+      elFilter.classList.add('filter--open');
+    })
   }
-})
+
+  window.addEventListener('click', (e) => {
+    if (e.target == elFilter) {
+      elFilter.classList.remove('filter--open')
+    }
+  })
+}
