@@ -86,3 +86,11 @@ if (document.documentElement.clientWidth <= 1024) {
     }
   })
 }
+
+// cart 
+
+let elCart = document.querySelector('.cart');
+let elCartOpen = document.querySelector('.js-cart-open');
+let elCartClose = document.querySelector('.js-cart-close');
+
+elCartOpen.addEventListener('click', )
