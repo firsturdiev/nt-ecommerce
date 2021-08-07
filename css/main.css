@@ -3115,7 +3115,7 @@ img {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
   .cart__footer-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
