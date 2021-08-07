@@ -79,7 +79,7 @@
               </a>
             </li>
 
-            <li class="site-header__actions-item site-header__actions-item--cart">
+            <li class="site-header__actions-item site-header__actions-item--cart js-cart-open">
               <a class="site-header__actions-btn" href="#" aria-label="Shopping cart">
                 <svg width="24" height="24" fill="none" viewBox='0 0 24 24' xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -100,6 +100,123 @@
               </button>
             </li>
           </ul>
+        </div>
+        <div class="cart">
+          <form class="cart__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="cart__header">
+              <h3 class="cart__header-title heading heading--secondary">Shopping cart</h3>
+              <div class="cart__header-btn">
+                <button class="cart__header-btn-close js-cart-close" type="button">Close</button>
+              </div>
+            </div>
+
+            <ul class="cart__list">
+              <li class="cart__item">
+                <div class="cart__item-side-left">
+                  <img class="cart__item-cover" src="./img/bg-product.jpg" width="100" height="67" alt="Product photo">
+                  <div class="cart__actions">
+                    <button class="cart__actions-btn cart__actions-btn--wishlist" type="button">Wishlist</button>
+                    <button class="cart__actions-btn cart__actions-btn--compare" type="button">Compare</button>
+                    <button class="cart__actions-btn cart__actions-btn--remove" type="button">Remove</button>
+                  </div>  
+                </div>
+
+                <div class="cart__item-side-right">
+                  <h4 class="cart__item-title heading heading--quinary">Product title</h4>
+
+                  <dl class="cart__info-list">
+                    <div class="cart__info-item">
+                      <dt class="cart__info-term">Farm:</dt>
+                      <dd class="cart__info-desc">Tharamis Farm</dd>
+                    </div>
+                    <div class="cart__info-item">
+                      <dt class="cart__info-term">Freshness:</dt>
+                      <dd class="cart__info-desc">1 day old</dd>
+                    </div>
+                  </dl>
+
+                  <img class="cart__rating" src="./img/icon-black-star-4.svg" alt="Star 4">
+
+                  <div class="cart__price">
+                    <div class="cart__price-text">
+                      <p class="cart__price-title heading heading--quaternary">36.99 USD</p>
+                      <p class="cart__price-discount heading heading--senary">48.56 USD</p>
+                    </div>
+
+                    <div class="cart__price-select">
+                      <span class="cart__price-caption">1 pcs</span>
+                      <select name="products__count">
+                        <option value="Pcs" selected disabled>Pcs</option>
+                        <option value="one">1</option>
+                        <option value="one">5</option>
+                        <option value="one">10</option>
+                        <option value="one">15</option>
+                        <option value="one">30</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cart__item">
+                <div class="cart__item-side-left">
+                  <img class="cart__item-cover" src="./img/bg-product.jpg" width="100" height="67" alt="Product photo">
+                  <div class="cart__actions">
+                    <button class="cart__actions-btn cart__actions-btn--wishlist" type="button">Wishlist</button>
+                    <button class="cart__actions-btn cart__actions-btn--compare" type="button">Compare</button>
+                    <button class="cart__actions-btn cart__actions-btn--remove" type="button">Remove</button>
+                  </div>  
+                </div>
+
+                <div class="cart__item-side-right">
+                  <h4 class="cart__item-title heading heading--quinary">Product title</h4>
+
+                  <dl class="cart__info-list">
+                    <div class="cart__info-item">
+                      <dt class="cart__info-term">Farm:</dt>
+                      <dd class="cart__info-desc">Tharamis Farm</dd>
+                    </div>
+                    <div class="cart__info-item">
+                      <dt class="cart__info-term">Freshness:</dt>
+                      <dd class="cart__info-desc">1 day old</dd>
+                    </div>
+                  </dl>
+
+                  <img class="cart__rating" src="./img/icon-black-star-4.svg" alt="Star 4">
+
+                  <div class="cart__price">
+                    <div class="cart__price-text">
+                      <p class="cart__price-title heading heading--quaternary">36.99 USD</p>
+                      <p class="cart__price-discount heading heading--senary">48.56 USD</p>
+                    </div>
+
+                    <div class="cart__price-select">
+                      <span class="cart__price-caption">1 pcs</span>
+                      <select name="products__count">
+                        <option value="Pcs" selected disabled>Pcs</option>
+                        <option value="one">1</option>
+                        <option value="one">5</option>
+                        <option value="one">10</option>
+                        <option value="one">15</option>
+                        <option value="one">30</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="cart__footer">
+              <div class="cart__footer-top">
+                <p class="cart__footer-text heading heading--senary">Subtotal</p>
+                <p class="cart__footer-price-title heading heading--secondary">73.98 USD</p>
+              </div>
+              <div class="cart__footer-bottom">
+                <button class="btn btn--small btn--white" type="button">Continue shopping</button>
+                <button class="cart__footer-bottom-btn btn btn--medium btn--green" type="submit">Go to Checkout</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
 

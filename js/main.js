@@ -9,8 +9,6 @@ elAccordionToggle.forEach(toggle => {
 })
 
 // menu
-
-if (document.documentElement.clientWidth <= 560) {
   let elMenu = document.querySelector('.categories');
   let elMenuOpen = document.querySelector('.js-menu-open');
   let elMenuClose = document.querySelector('.categories__close');
@@ -23,7 +21,6 @@ if (document.documentElement.clientWidth <= 560) {
   elMenuClose.addEventListener('click', () => {
     elMenu.classList.remove('categories--open');
   })
-}
 
 // hover effects
 
