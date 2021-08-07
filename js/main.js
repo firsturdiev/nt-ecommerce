@@ -93,4 +93,10 @@ let elCart = document.querySelector('.cart');
 let elCartOpen = document.querySelector('.js-cart-open');
 let elCartClose = document.querySelector('.js-cart-close');
 
-elCartOpen.addEventListener('click', )
+elCartOpen.addEventListener('click', () => {
+  elCart.classList.add('cart--open');
+})
+
+elCartClose.addEventListener('click', () => {
+  elCart.classList.remove('cart--open');
+})

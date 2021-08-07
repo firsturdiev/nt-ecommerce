@@ -1,6 +1,7 @@
 /* CART */
 
 .cart {
+  display: none;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -9,6 +10,10 @@
   height: 100%;
   padding: 24px 16px 16px;
   background-color: #fff;
+}
+
+.cart--open {
+  display: block;
 }
 
 .cart__form {

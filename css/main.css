@@ -2814,6 +2814,7 @@ img {
 
 /* CART */
 .cart {
+  display: none;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -2822,6 +2823,10 @@ img {
   height: 100%;
   padding: 24px 16px 16px;
   background-color: #fff;
+}
+
+.cart--open {
+  display: block;
 }
 
 .cart__form {
@@ -3048,6 +3053,10 @@ img {
 .cart__footer-top {
   padding-bottom: 24px;
   border-bottom: 1px solid #EBEBEB;
+}
+
+.cart__footer-text {
+  margin-bottom: 8px;
 }
 
 .cart__footer-bottom {
