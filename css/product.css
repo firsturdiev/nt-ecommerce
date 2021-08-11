@@ -1,0 +1,108 @@
+/* PRODUCT */
+
+.site-content {
+  padding: 0 15px;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 43px;
+}
+
+.product__cover {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1160px) {
+  .product__cover {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 970px)  {
+  .product__cover {
+    width: 350px;
+  }
+}
+
+.product__badges {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.product__info-term {
+  min-width: 68px;
+}
+
+.product__info-last .product__info-term {
+  min-width: 95px;
+}
+
+.product__actions-btn::before {
+  transform: scale(1);
+}
+
+.product__actions-bottom-btn::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 870px) {
+  .product__actions-price {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .product__actions .input-group,
+  .product__actions .product__actions-btn {
+    flex-grow: 1;
+  }
+}
+
+.product__actions-bottom-btn--wishlist::before {
+  background-image: url('../img/icon-heart-green.svg');
+}
+
+.product__actions-bottom-btn--compare::before {
+  background-image: url('../img/icon-compare.svg');
+}
+
+.product__tabs .nav {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+@media screen and (max-width: 750px) {
+  .product {
+    flex-direction: column;
+  }
+
+  .product__side-left {
+    margin-right: initial !important;
+    margin-bottom: 30px;
+  }
+
+  .product__cover {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .product__actions .input-group {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+}

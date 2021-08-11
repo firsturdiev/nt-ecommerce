@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="src/bootstrap.min.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+  <main class="site-content bg-white shadow-sm py-4 px-lg-2">
+    <!-- BREADCRUMB -->
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Homepage</a></li>
+        <li class="breadcrumb-item"><a href="#">Fruit and vegetables</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Carrots from Tomissy Farm</li>
+      </ol>
+    </nav>
+
+
+    <!-- PRODUCT -->
+
+    <section class="product d-flex py-2">
+      <!-- LEFT -->
+
+      <div class="product__side-left mr-5">
+        <div class="position-relative">
+          <img class="product__cover d-block rounded-lg mb-4" src="./img/bg-product.jpg" width="569" height="437"
+            alt="Product photo">
+
+          <div class="product__badges d-flex">
+            <span class="badge badge-pill badge-success mr-2">- 36 %</span>
+            <span class="badge badge-pill badge-success">Free shipping</span>
+          </div>
+        </div>
+
+        <img class="product__cover d-block rounded-lg mb-4" src="./img/bg-product.jpg" width="569" height="437"
+          alt="Product photo">
+        <img class="product__cover d-block rounded-lg" src="./img/bg-product.jpg" width="569" height="437"
+          alt="Product photo">
+      </div>
+
+
+      <!-- RIGHT -->
+
+      <div class="product__side-right">
+        <h1 class="mb-2">Carrots from Tomissy Farm</h1>
+        <div class="d-flex mb-4">
+          <img class="mr-2" src="./img/icon-star-4.svg" width="108" height="20" alt="Star 4">
+          <a class="text-black-50" href="#">(1 customer review)</a>
+        </div>
+
+        <p class="mb-4">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a
+          full love to
+          his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+
+        <div class="product__info-wrapper mb-4 d-flex flex-wrap">
+          <dl class="mr-4 mb-xl-0 mb-4 mr-xl-auto list-unstyled">
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">SKU:</dt>
+              <dd class="mb-0">76645</dd>
+            </div>
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">Category:</dt>
+              <dd class="mb-0">Vegetables</dd>
+            </div>
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">SKU:</dt>
+              <dd class="mb-0 text-success" style="text-decoration: underline;">In Stock</dd>
+            </div>
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">Farm:</dt>
+              <dd class="mb-0">Grocery Tarm Fields</dd>
+            </div>
+          </dl>
+
+          <dl class="product__info-last mb-0 list-unstyled">
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">Freshness:</dt>
+              <dd class="mb-0">1 days old</dd>
+            </div>
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">Buy by:</dt>
+              <dd class="mb-0">pcs, kgs, box, pack</dd>
+            </div>
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">Delivery:</dt>
+              <dd class="mb-0">in 2 days</dd>
+            </div>
+            <div class="mb-2 d-flex">
+              <dt class="product__info-term text-black-50 font-weight-normal mr-4">Delivery area:</dt>
+              <dd class="mb-0">Czech republic</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="product__actions d-flex align-items-center flex-wrap border p-3 rounded-lg mb-3">
+          <div class="product__actions-price mr-auto">
+            <p class="h3 text-success m-0">36.23 USD</p>
+            <s class="text-black-50 small">48.56 USD</s>
+          </div>
+
+          <div class="input-group mr-3 w-auto">
+            <div class="input-group-prepend align-items-center">
+              <label class="input-group-text" for="inputGroupSelect01">1</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Pcs</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <button class="product__actions-btn btn btn-success font-weight-bold text-el" type="button">+ Add to cart</button>
+        </div>
+
+        <div class="product__actions-bottom d-flex flex-wrap mb-5">
+          <button
+            class="product__actions-bottom-btn product__actions-bottom-btn--wishlist btn btn-sm d-inline-flex align-items-center mr-2"
+            type="button">Add to my wish list</button>
+          <button
+            class="product__actions-bottom-btn product__actions-bottom-btn--compare btn btn-sm d-inline-flex align-items-center"
+            type="button">Compare</button>
+        </div>
+
+        <div class="product__tabs">
+          <ul class="nav nav-tabs flex-nowrap mb-4">
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link active" href="#">Description</a>
+            </li>
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link" href="#">Reviews <span class="badge badge-light">18</span></a>
+            </li>
+            <li class="nav-item flex-shrink-0">
+              <a class="nav-link" href="#">Questions <span class="badge badge-light">4</span></a>
+            </li>
+          </ul>
+
+          <div>
+            <h3 class="h5">Origins</h3>
+            <p class="mb-4">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t
+              grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever
+              possible.
+            </p>
+            <h3 class="h5">How to cook</h3>
+            <p class="mb-4">From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to
+              an enormous number of recipes.</p>
+            
+            <h3 class="h5 mb-4">Full of Vitamins!</h3>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Vitamins</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">% DV</th>
+                </tr>
+              </thead>
+              <tbody class="text-black-50">
+                <tr>
+                  <td>Vitamin A equiv.</td>
+                  <td>735 μg</td>
+                  <td>104 %</td>
+                </tr>
+                <tr>
+                  <td>Thiamine (B1)</td>
+                  <td>0.066 mg</td>
+                  <td>6 %</td>
+                </tr>
+                <tr>
+                  <td>Niacin (B3)</td>
+                  <td>0.983 mg</td>
+                  <td>7 %</td>
+                </tr>
+                <tr>
+                  <td>Vitamin A equiv.</td>
+                  <td>735 μg</td>
+                  <td>104 %</td>
+                </tr>
+                <tr>
+                  <td>Thiamine (B1)</td>
+                  <td>0.066 mg</td>
+                  <td>6 %</td>
+                </tr>
+                <tr>
+                  <td>Niacin (B3)</td>
+                  <td>0.983 mg</td>
+                  <td>7 %</td>
+                </tr>
+                <tr>
+                  <td>Vitamin A equiv.</td>
+                  <td>735 μg</td>
+                  <td>104 %</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
