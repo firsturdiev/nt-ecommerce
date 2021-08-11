@@ -4,7 +4,7 @@
   padding: 0 15px;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 43px;
+  padding: 0 43px;
 }
 
 .product__cover {
@@ -84,12 +84,31 @@
   }
 
   .product__side-left {
+    display: flex;
+    overflow-x: auto;
     margin-right: initial !important;
     margin-bottom: 30px;
+    border-radius: 10px;
   }
 
   .product__cover {
+    width: 75%;
+    margin-bottom: 0 !important;
+  }
+
+  .product__cover-wrapper {
     width: 100%;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+
+  .product__cover-wrapper .product__cover {
+    margin-right: 0 !important;
+    width: 100%;
+  }
+
+  .product__cover:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -104,5 +123,11 @@
     width: 100% !important;
     margin-right: 0 !important;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .site-content {
+    padding: 0 15px;
   }
 }
