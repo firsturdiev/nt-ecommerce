@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="src/bootstrap.min.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper bg-white shadow-sm py-4 px-4">
+    <main class="site-content">
+      <h1 class="sr-only">Checkout page</h1>
+
+      <!-- BREADCRUMB -->
+
+      <nav class="mb-5" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Homepage</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Checkout page</li>
+        </ol>
+      </nav>
+
+
+      <!-- CHECKOUT -->
+
+      <section class="site-content__inner">
+        <form class="checkout w-75" action="https://echo.htmlacademy.ru" method="POST">
+          <section class="billing-info row mb-5">
+            <header class="mb-4 col-12">
+              <h2>Billing info</h2>
+              <div class="d-flex justify-content-between text-black-50">
+                <p class="mb-0">Please enter your billing info</p>
+                <span>Step 1 of 5</span>
+              </div>
+            </header>
+
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="firstName">First name</label>
+              <input type="text" class="form-control checkout__field" id="firstName" placeholder="First name"
+                name="first_name" required>
+            </div>
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="lastName">Last name</label>
+              <input type="text" class="form-control checkout__field" id="lastName" placeholder="Last name"
+                name="last_name" required>
+            </div>
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="emailAddress">Email address</label>
+              <input type="email" class="form-control checkout__field" id="emailAddress" placeholder="Email address"
+                name="email" required>
+            </div>
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="phoneNumber">Phone number</label>
+              <input type="tel" class="form-control checkout__field" id="phoneNumber" placeholder="Phone number"
+                name="tel" required>
+            </div>
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="address">Address</label>
+              <input type="text" class="form-control checkout__field" id="address" placeholder="Address" name="address"
+                required>
+            </div>
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="city">Town / City</label>
+              <input type="text" class="form-control checkout__field" id="city" placeholder="Town or city" name="city"
+                required>
+            </div>
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="country">State / Country</label>
+              <select class="custom-select checkout__field" id="country" name="country" required>
+                <option value="" selected disabled>Choose a state or Country</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group col-6">
+              <label class="mb-0 font-weight-bold" for="zip_code">ZIP/Postal code</label>
+              <input type="text" class="form-control checkout__field" id="zip_code" placeholder="Postal code or ZIP"
+                name="ZIP_code" required>
+            </div>
+
+            <div class="input-group col-5 mt-2">
+              <label class="input-group-text checkout__field">
+                <input type="checkbox" class="mr-2" name="ship__different" required>
+                Ship to a different address?
+              </label>
+            </div>
+          </section>
+
+
+          <section class="billing-medhod row mb-5">
+            <header class="mb-4 col-12">
+              <h2>Billing method</h2>
+              <div class="d-flex justify-content-between text-black-50">
+                <p class="mb-0">Please enter your billing method</p>
+                <span>Step 2 of 5</span>
+              </div>
+            </header>
+
+            <div class="input-group col-12 mb-3">
+              <label class="input-group-text checkout__field font-weight-bold w-100 justify-content-between">
+                <div>
+                  <input type="radio" class="mr-2" aria-label="Billing method" name="billing_method" required>
+                  FedEx
+                </div>
+                <div>
+                  <span class="mr-2 text-success">+32 USD</span>
+                  Additional price
+                </div>
+                <img src="./img/logo-fedex.png" width="54" height="16" alt="Logo of FedEx">
+              </label>
+            </div>
+
+            <div class="input-group col-12">
+              <label class="input-group-text checkout__field font-weight-bold w-100 justify-content-between">
+                <div>
+                  <input type="radio" class="mr-2" aria-label="Billing method" name="billing_method" required>
+                  DHL
+                </div>
+                <div>
+                  <span class="mr-2 text-success">+15 USD</span>
+                  Additional price
+                </div>
+                <img src="./img/logo-dhl.png" width="93" height="14" alt="Logo of DHL">
+              </label>
+            </div>
+          </section>
+
+
+          <section class="payment-medhod row mb-5">
+            <header class="mb-4 col">
+              <h2>Payment method</h2>
+              <div class="d-flex justify-content-between text-black-50">
+                <p class="mb-0">Please enter your payment method</p>
+                <span>Step 3 of 5</span>
+              </div>
+            </header>
+
+            <div class="accordion col-12 font-weight-bold" id="paymentAccordion">
+              <div class="card border rounded-lg mb-3">
+                <label class="card-header d-flex align-items-center justify-content-between border-0 bg-transparent">
+                  <div>
+                    <input type="radio" class="mr-2" name="paymentToggle" data-toggle="collapse"
+                      data-target="#paymentCollapseFirst" aria-expanded="true" aria-controls="paymentCollapseFirst"
+                      checked required>
+                    Credit card
+                  </div>
+                  <img src="./img/logo-visa-mastercard.png" width="94" height="20" alt="Logo of VISA and Mastercard">
+                </label>
+
+                <div id="paymentCollapseFirst" class="collapse show" data-parent="#paymentAccordion">
+                  <div class="card-body row">
+                    <label class="col-12 mb-3">
+                      Card number
+                      <input class="form-control checkout__field" type="number" name="card_number"
+                        placeholder="Card number" required>
+                    </label>
+                    <label class="col-6">
+                      Card holder
+                      <input class="form-control checkout__field" type="text" name="card_holder"
+                        placeholder="Card holder" required>
+                    </label>
+                    <label class="col-3">
+                      Expiration date
+                      <input class="form-control checkout__field" type="date" name="card_expiration"
+                        placeholder="DD/MM/YY" required>
+                    </label>
+                    <label class="col-3">
+                      CVC
+                      <input class="form-control checkout__field" type="number" name="card_number" placeholder="CVC"
+                        required>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card border rounded-lg checkout__field mb-3">
+                <label class="card-header d-flex align-items-center justify-content-between border-0 bg-transparent">
+                  <div>
+                    <input type="radio" class="mr-2" name="paymentToggle" data-toggle="collapse"
+                      data-target="#paymentCollapseSecond" aria-expanded="true" aria-controls="paymentCollapseSecond"
+                      required>
+                    PayPal
+                  </div>
+                  <img src="./img/logo-paypal.png" width="76" height="18" alt="Logo of PayPal">
+                </label>
+
+                <div id="paymentCollapseSecond" class="collapse" data-parent="#paymentAccordion">
+                  <div class="card-body row">
+                    <label class="col-12 mb-3">
+                      Card number
+                      <input class="form-control checkout__field" type="number" name="card_number"
+                        placeholder="Card number" required>
+                    </label>
+                    <label class="col-6">
+                      Card holder
+                      <input class="form-control checkout__field" type="text" name="card_holder"
+                        placeholder="Card holder" required>
+                    </label>
+                    <label class="col-3">
+                      Expiration date
+                      <input class="form-control checkout__field" type="date" name="card_expiration"
+                        placeholder="DD/MM/YY" required>
+                    </label>
+                    <label class="col-3">
+                      CVC
+                      <input class="form-control checkout__field" type="number" name="card_number" placeholder="CVC"
+                        required>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card border rounded-lg checkout__field">
+                <label class="card-header d-flex align-items-center justify-content-between border-0 bg-transparent">
+                  <div>
+                    <input type="radio" class="mr-2" name="paymentToggle" data-toggle="collapse"
+                      data-target="#paymentCollapseThird" aria-expanded="true" aria-controls="paymentCollapseThird"
+                      required>
+                    Bitcoin
+                  </div>
+                  <img src="./img/logo-bitcoin.png" width="75" height="16" alt="Logo of Bitcoin">
+                </label>
+
+                <div id="paymentCollapseThird" class="collapse" data-parent="#paymentAccordion">
+                  <div class="card-body row">
+                    <label class="col-12 mb-3">
+                      Card number
+                      <input class="form-control checkout__field" type="number" name="card_number"
+                        placeholder="Card number" required>
+                    </label>
+                    <label class="col-6">
+                      Card holder
+                      <input class="form-control checkout__field" type="text" name="card_holder"
+                        placeholder="Card holder" required>
+                    </label>
+                    <label class="col-3">
+                      Expiration date
+                      <input class="form-control checkout__field" type="date" name="card_expiration"
+                        placeholder="DD/MM/YY" required>
+                    </label>
+                    <label class="col-3">
+                      CVC
+                      <input class="form-control checkout__field" type="number" name="card_number" placeholder="CVC"
+                        required>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="additionals row mb-5">
+            <header class="mb-4 col">
+              <h2>Additional informations</h2>
+              <div class="d-flex justify-content-between text-black-50">
+                <p class="mb-0">Need something else? We will make it for you!</p>
+                <span>Step 4 of 5</span>
+              </div>
+            </header>
+
+            <div class="form-group col-12">
+              <label class="mb-0 font-weight-bold" for="notes">Order notes</label>
+              <textarea type="text" class="form-control checkout__field" id="notes"
+                placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." name="first_name"
+                required></textarea>
+            </div>
+          </section>
+
+
+          <section class="confirmation row mb-5">
+            <header class="mb-4 col">
+              <h2>Confirmation</h2>
+              <div class="d-flex justify-content-between text-black-50">
+                <p class="mb-0">We are getting to the end. Just few clicks and your order si ready!</p>
+                <span>Step 5 of 5</span>
+              </div>
+            </header>
+
+            <div class="input-group col-12 mb-2">
+              <label class="input-group-text checkout__field">
+                <input type="checkbox" class="mr-2" name="newsletters" required>
+                I agree with sending an Marketing and newsletter emails. No spam, promissed!
+              </label>
+            </div>
+            <div class="input-group col-12 mb-4">
+              <label class="input-group-text checkout__field">
+                <input type="checkbox" class="mr-2" name="terms" required>
+                <p class="mb-0">I agree with our <a href="#">terms and conditions</a> and <a href="#">privacy
+                    policy</a>.</p>
+              </label>
+            </div>
+
+            <div class="col-12 mb-4">
+              <button class="btn btn-success" type="submit">Complete order</button>
+            </div>
+
+            <div class="col-12">
+              <img class="d-block mb-1" src="./img/icon-confirmation.png" width="32" height="32"
+                alt="Confirmation logo">
+              <b>All your data are safe</b>
+              <p class="text-black-50" style="max-width: 250px;">We are using the most advanced security to provide you
+                the best experience ever.</p>
+            </div>
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer py-4">
+      <p class="mb-0">Copyright © 2020 Freshnesecom</p>
+    </footer>
+  </div>
+</body>
+
+</html>

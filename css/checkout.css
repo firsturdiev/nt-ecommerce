@@ -1,0 +1,17 @@
+/* SITE-CONTENT */
+
+.wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+/* CHECKOUT */
+
+.checkout__field {
+  background-color: #f9f9f9;
+}
+
+textarea.checkout__field {
+  resize: vertical;
+  min-height: 112px;
+}
